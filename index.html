@@ -1,94 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zech George | Data Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zech George | Data Scientist</title>
+  <meta name="description" content="Data Scientist specialising in forecasting, machine learning, and AI — University of Cambridge.">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <nav class="top-nav">
 
+  <!-- Background glow -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <!-- Nav -->
+  <nav class="top-nav">
+    <a href="index.html" class="nav-logo">zg<span>.data</span></a>
     <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-
-        <span class="divider">|</span>
-
-        <a href="Zech_George_CV.pdf" download>CV</a>
-        <a href="https://github.com/zechgeorge" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/zech-george/" target="_blank">LinkedIn</a>
-        <a href="mailto:zech.vincent@gmail.com">Email</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <div class="nav-divider"></div>
+      <a href="Zech_George_CV.pdf" download class="nav-cta">CV ↓</a>
+      <a href="https://github.com/zechvincent-lab" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/zech-george/" target="_blank">LinkedIn</a>
+      <a href="mailto:zech.vincent@gmail.com">Email</a>
     </div>
+  </nav>
 
-</nav>
+  <!-- Hero -->
+  <div style="max-width:1100px;margin:0 auto;padding:0 2rem;position:relative;z-index:1;">
+    <section class="hero" style="padding-left:0;padding-right:0;">
 
-</nav>
+      <div class="hero-eyebrow">Data Scientist · Cambridge Level 7</div>
 
-<header class="hero">
+      <h1>
+        Turning data<br>into <span class="accent">action.</span>
+      </h1>
 
-    <h1>Zech George</h1>
+      <p class="hero-sub">
+        I build forecasting models, ML pipelines, and data-driven tools that translate complex datasets into decisions businesses can act on.
+      </p>
 
-    <p class="tagline">Turning data into action</p>
+      <div class="hero-tags">
+        <span class="tag">Time Series</span>
+        <span class="tag">Forecasting</span>
+        <span class="tag">Machine Learning</span>
+        <span class="tag">ARIMA · SARIMA</span>
+        <span class="tag">XGBoost</span>
+        <span class="tag">LSTM</span>
+        <span class="tag">Python</span>
+        <span class="tag">Power BI</span>
+      </div>
 
-    <p class="subtag">
-        Data Analyst • AI • Machine Learning • Forecasting
-    </p>
+      <div class="hero-actions">
+        <a href="projects.html" class="btn-primary">View Case Study →</a>
+        <a href="about.html" class="btn-ghost">About Me</a>
+        <a href="Zech_George_CV.pdf" download class="btn-ghost">Download CV</a>
+      </div>
 
-    <div class="links">
-        <a href="about.html">About</a>
-        <a href="projects.html">Case Study</a>
-        <a href="Zech_George_CV.pdf" download>CV Download</a>
+    </section>
+  </div>
 
-        <a href="mailto:zech.vincent@gmail.com">✉ Email</a>
-        <a href="https://github.com/zechgeorge" target="_blank">💻 GitHub</a>
-        <a href="https://www.linkedin.com/in/zech-george/" target="_blank">🔗 LinkedIn</a>
-    </div>
+  <div class="divider"></div>
 
-</header>
+  <!-- Featured Project -->
+  <div class="page-wrap" style="position:relative;z-index:1;">
+    <section>
+      <div class="section-label">Featured Work</div>
+      <h2 class="section-title">Case Study</h2>
+      <p class="section-desc">End-to-end forecasting analysis using classical and ML approaches to model real-world book sales demand.</p>
 
-<section class="intro">
+      <a href="projects.html" class="project-card" style="max-width:780px;">
+        <div class="card-vis">
+          <!-- Inline SVG sparkline visualisation -->
+          <svg viewBox="0 0 760 180" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
+            <!-- Grid lines -->
+            <line x1="0" y1="45"  x2="760" y2="45"  stroke="#1e2a38" stroke-width="1"/>
+            <line x1="0" y1="90"  x2="760" y2="90"  stroke="#1e2a38" stroke-width="1"/>
+            <line x1="0" y1="135" x2="760" y2="135" stroke="#1e2a38" stroke-width="1"/>
 
-    <h2>Overview</h2>
+            <!-- Alchemist — actual (amber) -->
+            <polyline
+              points="0,120 40,115 80,130 120,100 160,95 200,110 240,88 280,100 320,92 360,105"
+              fill="none" stroke="#f0a500" stroke-width="2" opacity="0.6"/>
 
-    <p>
-        I am a data analyst focused on forecasting, machine learning, and statistical modelling.
-        I specialise in turning complex datasets into clear, actionable insights that support business decisions.
-    </p>
+            <!-- Alchemist — forecast (cyan, dashed) -->
+            <polyline
+              points="360,105 400,98 440,92 480,97 520,90 560,94 600,88 640,91 680,86 720,89 760,85"
+              fill="none" stroke="#00d4ff" stroke-width="2" stroke-dasharray="6 4" opacity="0.85"/>
 
-</section>
+            <!-- Caterpillar — actual (amber lighter) -->
+            <polyline
+              points="0,60 40,55 80,70 120,48 160,42 200,58 240,38 280,50 320,44 360,56"
+              fill="none" stroke="#f0a500" stroke-width="2" opacity="0.35"/>
 
-<section class="featured">
+            <!-- Caterpillar — forecast (cyan dimmer) -->
+            <polyline
+              points="360,56 400,50 440,44 480,49 520,42 560,46 600,40 640,43 680,38 720,41 760,38"
+              fill="none" stroke="#00d4ff" stroke-width="2" stroke-dasharray="6 4" opacity="0.4"/>
 
-    <h2>Featured Case Study</h2>
+            <!-- Forecast boundary line -->
+            <line x1="360" y1="0" x2="360" y2="180" stroke="#253345" stroke-width="1" stroke-dasharray="4 3"/>
 
-    <div class="card">
+            <!-- Labels -->
+            <text x="340" y="15" text-anchor="middle" fill="#3d5068" font-size="9" font-family="'JetBrains Mono',monospace">ACTUAL</text>
+            <text x="440" y="15" text-anchor="middle" fill="#3d5068" font-size="9" font-family="'JetBrains Mono',monospace">FORECAST</text>
+          </svg>
+        </div>
 
-        <h3>Book Sales Forecasting</h3>
+        <div class="card-body">
+          <div class="card-meta">Time Series · Forecasting · 2025</div>
+          <h3 class="card-title">Book Sales Forecasting</h3>
+          <p class="card-desc">
+            Demand forecasting for <em>The Alchemist</em> and <em>The Very Hungry Caterpillar</em> using SARIMA, XGBoost, LSTM, and hybrid model architectures. Evaluated across MAPE, MAE, and RMSE with residual diagnostics.
+          </p>
+          <div class="card-chips">
+            <span class="chip">SARIMA</span>
+            <span class="chip">XGBoost</span>
+            <span class="chip">LSTM</span>
+            <span class="chip">Hybrid Models</span>
+            <span class="chip">Python</span>
+            <span class="chip">Statsmodels</span>
+          </div>
+          <span class="card-link">Read case study →</span>
+        </div>
+      </a>
+    </section>
+  </div>
 
-        <p>
-            End-to-end time series forecasting analysis for two books:
-            <em>The Alchemist</em> and <em>The Very Hungry Caterpillar</em>.
-        </p>
+  <div class="divider"></div>
 
-        <p>
-            Built using classical statistical methods and machine learning approaches to understand demand patterns,
-            seasonality, and forecasting accuracy.
-        </p>
+  <!-- Quick bio strip -->
+  <div class="page-wrap" style="position:relative;z-index:1;">
+    <section style="padding:4rem 0;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+        <div>
+          <div class="section-label">Background</div>
+          <h2 class="section-title" style="margin-bottom:1.25rem;">10+ years of data.<br>Now building with it.</h2>
+          <p style="color:var(--text-secondary);margin-bottom:1rem;line-height:1.75;">
+            A decade in financial systems and analytics gave me an instinct for data quality and what business decisions actually hinge on. I'm now completing a <strong style="color:var(--text-primary);">Level 7 in Data Science, Machine Learning & AI at the University of Cambridge</strong> — applying that experience to predictive modelling and forecasting.
+          </p>
+          <a href="about.html" class="btn-ghost" style="margin-top:0.5rem;">More about me →</a>
+        </div>
+        <div>
+          <div class="tools-grid">
+            <div class="tool-item"><span class="tool-icon">py</span> Python</div>
+            <div class="tool-item"><span class="tool-icon">pd</span> Pandas</div>
+            <div class="tool-item"><span class="tool-icon">sk</span> Statsmodels</div>
+            <div class="tool-item"><span class="tool-icon">xg</span> XGBoost</div>
+            <div class="tool-item"><span class="tool-icon">tf</span> TensorFlow</div>
+            <div class="tool-item"><span class="tool-icon">bi</span> Power BI</div>
+            <div class="tool-item"><span class="tool-icon">xl</span> Excel</div>
+            <div class="tool-item"><span class="tool-icon">nb</span> Colab</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
-        <a href="projects.html">View Full Case Study →</a>
+  <div class="divider"></div>
 
-    </div>
+  <!-- Connect -->
+  <div class="page-wrap" style="position:relative;z-index:1;">
+    <section style="padding:4rem 0;">
+      <div class="section-label">Connect</div>
+      <h2 class="section-title" style="margin-bottom:1.5rem;">Get in touch</h2>
+      <div class="social-row">
+        <a href="mailto:zech.vincent@gmail.com" class="social-link">✉ Email</a>
+        <a href="https://www.linkedin.com/in/zech-george/" target="_blank" class="social-link">🔗 LinkedIn</a>
+        <a href="https://github.com/zechvincent-lab" target="_blank" class="social-link">⌥ GitHub</a>
+        <a href="Zech_George_CV.pdf" download class="social-link">↓ Download CV</a>
+      </div>
+    </section>
+  </div>
 
-</section>
-
-<footer>
-
-    <p>© 2026 Zech George • Data Portfolio</p>
-
-</footer>
+  <footer>
+    <p>© 2026 <a href="index.html">Zech George</a> · zechgeorge.com · Built with intent.</p>
+  </footer>
 
 </body>
 </html>
