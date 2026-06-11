@@ -99,3 +99,40 @@ footer {
 .card a:hover {
     text-decoration: underline;
 }
+
+.page-header {
+    text-align: center;
+    padding: 60px 20px;
+    background: #111;
+    color: white;
+}
+
+.projects-grid {
+    max-width: 900px;
+    margin: 40px auto;
+    display: grid;
+    gap: 20px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.content {
+    max-width: 800px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
