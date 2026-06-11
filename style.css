@@ -146,30 +146,32 @@ footer {
     top: 0;
     z-index: 1000;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 10px 20px;
     background: white;
     border-bottom: 1px solid #eee;
+
+    padding: 12px 10px;
+    text-align: center;
 }
 
-.nav-left a,
-.nav-right a {
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;   /* IMPORTANT for small screens */
+    gap: 15px;
+}
+
+.nav-links a {
     text-decoration: none;
     color: #111;
     font-weight: 500;
-    margin: 0 10px;
     font-size: 0.95rem;
 }
 
-.nav-left a:hover,
-.nav-right a:hover {
+.nav-links a:hover {
     text-decoration: underline;
 }
 
-/* make right side more compact */
-.nav-right a {
-    font-size: 1.1rem;
+.divider {
+    color: #ccc;
 }
