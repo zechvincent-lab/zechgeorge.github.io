@@ -1,160 +1,76 @@
-body {
-    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-    margin: 0;
-    background: #f4f6f8;
-    color: #1a1a1a;
-    line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zech George | Data Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-/* HERO */
-.hero {
-    background: linear-gradient(135deg, #111, #2a2a2a);
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
-}
+<body>
 
-.hero h1 {
-    margin: 0;
-    font-size: 3.2rem;
-    letter-spacing: -1px;
-}
+<header class="hero">
 
-.hero p {
-    margin-top: 10px;
-    font-size: 1.2rem;
-    opacity: 0.85;
-}
+    <h1>Zech George</h1>
 
-/* LINKS */
-.links {
-    margin-top: 25px;
-}
+    <p class="tagline">Turning data into action</p>
 
-.links a {
-    color: white;
-    margin: 0 12px;
-    text-decoration: none;
-    font-weight: 500;
-    opacity: 0.9;
-    transition: 0.2s;
-}
+    <p class="subtag">
+        Data Analyst • AI • Machine Learning • Forecasting
+    </p>
 
-.links a:hover {
-    opacity: 1;
-    text-decoration: underline;
-}
+    <div class="links">
+        <a href="about.html">About</a>
+        <a href="projects.html">Case Study</a>
+        <a href="Zech_George_CV.pdf" download>CV Download</a>
 
-/* SECTIONS */
-section {
-    max-width: 850px;
-    margin: 50px auto;
-    background: white;
-    padding: 35px;
-    border-radius: 14px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-}
+        <a href="mailto:zech.vincent@gmail.com">✉ Email</a>
+        <a href="https://github.com/zechgeorge" target="_blank">💻 GitHub</a>
+        <a href="https://www.linkedin.com/in/zech-george/" target="_blank">🔗 LinkedIn</a>
+    </div>
 
-/* HEADINGS */
-h2 {
-    margin-top: 0;
-    font-size: 1.6rem;
-}
+</header>
 
-/* PROJECT CARD */
-.card {
-    border-left: 4px solid #111;
-    padding: 15px 20px;
-    margin-top: 15px;
-    background: #fafafa;
-    border-radius: 8px;
-}
+<section class="intro">
 
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 40px;
-    color: #666;
-    font-size: 0.9rem;
-}
-.card h4 {
-    margin-bottom: 5px;
-    margin-top: 15px;
-    font-size: 0.95rem;
-}
+    <h2>Overview</h2>
 
-.card ul {
-    margin-top: 5px;
-    padding-left: 20px;
-}
+    <p>
+        I am a data analyst focused on forecasting, machine learning, and statistical modelling.
+        I specialise in turning complex datasets into clear, actionable insights that support business decisions.
+    </p>
 
-.card a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #111;
-    font-weight: bold;
-    text-decoration: none;
-}
+</section>
 
-.card a:hover {
-    text-decoration: underline;
-}
+<section class="featured">
 
-.page-header {
-    text-align: center;
-    padding: 60px 20px;
-    background: #111;
-    color: white;
-}
+    <h2>Featured Case Study</h2>
 
-.projects-grid {
-    max-width: 900px;
-    margin: 40px auto;
-    display: grid;
-    gap: 20px;
-}
+    <div class="card">
 
-.card img {
-    width: 100%;
-    border-radius: 8px;
-    margin-top: 10px;
-}
+        <h3>Book Sales Forecasting</h3>
 
-.content {
-    max-width: 800px;
-    margin: 40px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-}
+        <p>
+            End-to-end time series forecasting analysis for two books:
+            <em>The Alchemist</em> and <em>The Very Hungry Caterpillar</em>.
+        </p>
 
-.btn {
-    display: inline-block;
-    padding: 10px 15px;
-    background: #111;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-}
+        <p>
+            Built using classical statistical methods and machine learning approaches to understand demand patterns,
+            seasonality, and forecasting accuracy.
+        </p>
 
+        <a href="projects.html">View Full Case Study →</a>
 
-.nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 15px;
-    background: #fff;
-    border-bottom: 1px solid #eee;
-    position: sticky;
-    top: 0;
-}
+    </div>
 
-.nav a {
-    text-decoration: none;
-    color: #111;
-    font-weight: 500;
-}
+</section>
 
-.nav a:hover {
-    text-decoration: underline;
-}
+<footer>
+
+    <p>© 2026 Zech George • Data Portfolio</p>
+
+</footer>
+
+</body>
+</html>
