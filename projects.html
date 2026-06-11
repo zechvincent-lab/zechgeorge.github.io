@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book Sales Forecasting Case Study | Zech George</title>
-  <meta name="description" content="Book sales forecasting case study using time series analysis, ARIMA, XGBoost, LSTM and hybrid forecasting models.">
+  <title>Book Sales Forecasting | Zech George</title>
+  <meta name="description" content="Forecasting book demand using ARIMA, SARIMA, XGBoost, LSTM and hybrid models across two sales datasets.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,140 +26,341 @@
     </div>
   </nav>
 
-  <main class="page-wrap">
+  <div class="page-wrap" style="position:relative;z-index:1;">
 
     <header class="detail-header">
-      <div class="section-label">Case Study</div>
-      <h1>Book Sales Forecasting</h1>
+      <div class="section-label">Forecasting Case Study</div>
+      <h1>Forecasting Book Demand Using Statistical & Machine Learning Models</h1>
       <p class="detail-sub">
-        Forecasting demand for <em>The Alchemist</em> and <em>The Very Hungry Caterpillar</em> using classical time series models, machine learning and hybrid forecasting approaches.
+        Compared ARIMA, SARIMA, XGBoost, LSTM and hybrid forecasting models across two book sales datasets
+        to evaluate forecasting accuracy and business value.
       </p>
 
       <div class="detail-chips">
         <span class="chip">Time Series</span>
+        <span class="chip">Forecasting</span>
+        <span class="chip">ARIMA</span>
         <span class="chip">SARIMA</span>
         <span class="chip">XGBoost</span>
         <span class="chip">LSTM</span>
         <span class="chip">Hybrid Models</span>
-        <span class="chip">Python</span>
       </div>
 
       <div class="hero-actions">
-        <a class="btn-primary" href="https://github.com/zechvincent-lab/Projects" target="_blank">View Repository →</a>
-        <a class="btn-ghost" href="index.html">Back Home</a>
+        <a href="https://github.com/zechvincent-lab/Projects" target="_blank" class="btn-primary">View Repository →</a>
+        <a href="mailto:zech.vincent@gmail.com" class="btn-ghost">Ask me about this project</a>
       </div>
     </header>
+
+    <section class="case-hero-visual">
+      <div class="chart-card">
+        <div class="chart-card-header">
+          <div>
+            <div class="card-meta">The Very Hungry Caterpillar</div>
+            <h2>Auto ARIMA Forecast</h2>
+          </div>
+          <span class="chart-badge">MAPE 17.17%</span>
+        </div>
+        <img src="images/caterpillar-auto-arima-forecast.png" alt="Auto ARIMA forecast for The Very Hungry Caterpillar showing training data, test data and forecast values.">
+      </div>
+    </section>
 
     <div class="divider"></div>
 
     <section>
-      <div class="project-card">
-        <div class="card-vis">
-          <svg viewBox="0 0 760 220" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="none">
-            <line x1="0" y1="55" x2="760" y2="55" stroke="#1e2a38" stroke-width="1"/>
-            <line x1="0" y1="110" x2="760" y2="110" stroke="#1e2a38" stroke-width="1"/>
-            <line x1="0" y1="165" x2="760" y2="165" stroke="#1e2a38" stroke-width="1"/>
-            <polyline points="0,150 50,142 100,158 150,118 200,105 250,128 300,92 350,110 400,96" fill="none" stroke="#f0a500" stroke-width="3" opacity="0.6"/>
-            <polyline points="400,96 450,92 500,84 550,94 600,80 650,86 700,76 760,82" fill="none" stroke="#00d4ff" stroke-width="3" stroke-dasharray="8 5" opacity="0.85"/>
-            <polyline points="0,80 50,70 100,88 150,58 200,50 250,70 300,46 350,62 400,54" fill="none" stroke="#f0a500" stroke-width="2" opacity="0.35"/>
-            <polyline points="400,54 450,48 500,42 550,50 600,40 650,45 700,36 760,42" fill="none" stroke="#00d4ff" stroke-width="2" stroke-dasharray="8 5" opacity="0.45"/>
-            <line x1="400" y1="0" x2="400" y2="220" stroke="#253345" stroke-width="1" stroke-dasharray="4 3"/>
-            <text x="360" y="24" text-anchor="middle" fill="#3d5068" font-size="10" font-family="'JetBrains Mono',monospace">ACTUAL SALES</text>
-            <text x="490" y="24" text-anchor="middle" fill="#3d5068" font-size="10" font-family="'JetBrains Mono',monospace">FORECAST</text>
-          </svg>
+      <div class="section-label">Project Snapshot</div>
+      <h2 class="section-title">Two datasets. Seven model approaches. One forecasting workflow.</h2>
+      <p class="section-desc">
+        The project investigated whether historical sales data could forecast future book demand accurately enough
+        to support procurement, stock planning and inventory decisions.
+      </p>
+
+      <div class="detail-stat-row">
+        <div class="detail-stat">
+          <span class="stat-val">2</span>
+          <span class="stat-label">Books analysed</span>
         </div>
-        <div class="card-body">
-          <div class="card-meta">Forecasting · Business Intelligence · Model Evaluation</div>
-          <h2 class="card-title">Turning historical sales into planning insight</h2>
-          <p class="card-desc">
-            The project investigated whether historical sales data contained enough trend, seasonal and autocorrelation structure to support future demand forecasting and better inventory decisions.
-          </p>
+        <div class="detail-stat">
+          <span class="stat-val">7</span>
+          <span class="stat-label">Model approaches</span>
+        </div>
+        <div class="detail-stat">
+          <span class="stat-val">16.21%</span>
+          <span class="stat-label">Best Caterpillar MAPE</span>
+        </div>
+        <div class="detail-stat">
+          <span class="stat-val">23.31%</span>
+          <span class="stat-label">Best Alchemist MAPE</span>
         </div>
       </div>
     </section>
 
     <div class="divider"></div>
 
-    <section class="detail-body">
-
-      <h2>Project Overview</h2>
-      <p>
-        This project explored forecasting techniques across two book titles, moving from exploratory analysis through to model selection, residual diagnostics and forecast evaluation.
-      </p>
-      <p>
-        The aim was not just to produce a prediction, but to understand whether the forecast was reliable enough to support business decisions around procurement, re-ordering and stock control.
-      </p>
-
-      <div class="metrics-grid">
-        <div class="metric-card">
-          <span class="metric-value">2</span>
-          <span class="metric-label">Book titles analysed</span>
+    <section>
+      <div class="section-label">Business Problem</div>
+      <div class="about-grid">
+        <div class="bio-block">
+          <h2 class="section-title" style="margin-bottom:1.5rem;">Why demand forecasting matters</h2>
+          <p>
+            Book sales are affected by trend, seasonality, popularity cycles and sudden demand spikes.
+            For publishers and retailers, poor forecasting can create stock shortages, excess inventory and
+            inefficient procurement decisions.
+          </p>
+          <p>
+            This project used historical sales data for <strong>The Very Hungry Caterpillar</strong> and
+            <strong>The Alchemist</strong> to test whether future demand could be predicted using a mix of
+            classical statistical models and machine learning techniques.
+          </p>
+          <p>
+            The goal was not simply to build a model, but to compare approaches objectively and identify which
+            method produced the most useful forecasts for each dataset.
+          </p>
         </div>
-        <div class="metric-card">
-          <span class="metric-value">7+</span>
-          <span class="metric-label">Analysis stages</span>
-        </div>
-        <div class="metric-card">
-          <span class="metric-value">3</span>
-          <span class="metric-label">Forecast metrics</span>
+
+        <div class="project-card">
+          <div class="card-body">
+            <div class="card-meta">Core Question</div>
+            <h3 class="card-title">Can historical sales patterns support better planning decisions?</h3>
+            <p class="card-desc">
+              The analysis focused on trend, seasonality, forecast accuracy and residual behaviour to understand
+              whether model outputs were reliable enough to inform business decision-making.
+            </p>
+            <div class="card-chips">
+              <span class="chip">Procurement</span>
+              <span class="chip">Inventory</span>
+              <span class="chip">Demand Planning</span>
+              <span class="chip">Forecast Accuracy</span>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <h2>Business Problem</h2>
-      <p>
-        Organisations often need to decide how much stock to order before future demand is known. Poor forecasts can lead to stock shortages, excess inventory, wasted budget and missed sales.
-      </p>
-      <p>
-        By analysing book sales from the Nielsen dataset, this case study tested whether trends and seasonal patterns could be used to generate practical, decision-focused forecasts.
-      </p>
+    <div class="divider"></div>
 
-      <h2>Dataset</h2>
-      <p>
-        The analysis focused on two titles:
-      </p>
-      <ul>
-        <li><em>The Alchemist</em></li>
-        <li><em>The Very Hungry Caterpillar</em></li>
-      </ul>
-      <p>
-        The historical data was cleaned, transformed and prepared for time series modelling in Python.
+    <section>
+      <div class="section-label">Understanding the Data</div>
+      <h2 class="section-title">Trend and seasonality were visible in the sales series</h2>
+      <p class="section-desc">
+        Decomposition helped separate the observed sales volume into trend, seasonal and residual components,
+        making it easier to understand the underlying structure before modelling.
       </p>
 
-      <h2>Methodology</h2>
-      <p>
-        The workflow followed a structured forecasting pipeline:
+      <div class="chart-card">
+        <div class="chart-card-header">
+          <div>
+            <div class="card-meta">The Very Hungry Caterpillar</div>
+            <h2>Time Series Decomposition</h2>
+          </div>
+          <span class="chart-badge">Trend · Seasonality · Residuals</span>
+        </div>
+        <img src="images/caterpillar-decomposition.png" alt="Time series decomposition plot for The Very Hungry Caterpillar showing observed volume, trend, seasonality and residuals.">
+      </div>
+
+      <div class="insight-grid">
+        <div class="insight-card">
+          <span class="insight-number">01</span>
+          <h3>Trend</h3>
+          <p>Sales showed a long-term upward movement, suggesting the series was not purely random.</p>
+        </div>
+        <div class="insight-card">
+          <span class="insight-number">02</span>
+          <h3>Seasonality</h3>
+          <p>Recurring fluctuations indicated that repeating demand patterns were present in the data.</p>
+        </div>
+        <div class="insight-card">
+          <span class="insight-number">03</span>
+          <h3>Residuals</h3>
+          <p>Remaining noise highlighted the limits of modelling and the need for forecast diagnostics.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <div class="section-label">Dataset 1</div>
+      <div class="case-split">
+        <div>
+          <h2 class="section-title">The Very Hungry Caterpillar</h2>
+          <p class="section-desc">
+            This dataset contained larger sales volumes, visible seasonality and recurring demand movement.
+            Statistical forecasting approaches performed particularly well, with the strongest monthly result
+            achieved by SARIMA.
+          </p>
+
+          <div class="detail-stat-row compact-stats">
+            <div class="detail-stat">
+              <span class="stat-val">SARIMA</span>
+              <span class="stat-label">Best model</span>
+            </div>
+            <div class="detail-stat">
+              <span class="stat-val">16.21%</span>
+              <span class="stat-label">Best MAPE</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-card-header">
+            <div>
+              <div class="card-meta">Weekly Hybrid Test</div>
+              <h2>Sequential Hybrid Forecast</h2>
+            </div>
+            <span class="chart-badge">MAPE 17.13%</span>
+          </div>
+          <img src="images/caterpillar-sequential-hybrid-forecast.png" alt="Sequential hybrid forecast for The Very Hungry Caterpillar showing train, actual and forecast lines.">
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <div class="section-label">Dataset 2</div>
+      <div class="case-split">
+        <div>
+          <h2 class="section-title">The Alchemist</h2>
+          <p class="section-desc">
+            The Alchemist behaved differently, with a sharp demand spike followed by lower, more stable sales.
+            The best result came from a parallel hybrid approach, showing that different datasets can favour
+            different forecasting methods.
+          </p>
+
+          <div class="detail-stat-row compact-stats">
+            <div class="detail-stat">
+              <span class="stat-val">Hybrid</span>
+              <span class="stat-label">Best model family</span>
+            </div>
+            <div class="detail-stat">
+              <span class="stat-val">23.31%</span>
+              <span class="stat-label">Best MAPE</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart-card">
+          <div class="chart-card-header">
+            <div>
+              <div class="card-meta">The Alchemist</div>
+              <h2>Parallel Hybrid Forecast</h2>
+            </div>
+            <span class="chart-badge">MAPE 23.31%</span>
+          </div>
+          <img src="images/alchemist-parallel-hybrid-forecast.png" alt="Parallel hybrid forecast for The Alchemist showing train, actual and forecast lines.">
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <div class="section-label">Model Comparison</div>
+      <h2 class="section-title">Model performance varied by dataset</h2>
+      <p class="section-desc">
+        The results showed that no single model consistently dominated. The best approach depended on the
+        structure and behaviour of the individual sales series.
+      </p>
+
+      <div class="model-comparison">
+        <table>
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>Caterpillar MAPE</th>
+              <th>Alchemist MAPE</th>
+              <th>Comment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Auto ARIMA Weekly</td>
+              <td>17.17%</td>
+              <td>25.79%</td>
+              <td>Strong statistical baseline</td>
+            </tr>
+            <tr>
+              <td>XGBoost Weekly</td>
+              <td>26.89%</td>
+              <td>34.93%</td>
+              <td>Lag-based ML approach underperformed here</td>
+            </tr>
+            <tr>
+              <td>LSTM Weekly</td>
+              <td>23.85%</td>
+              <td>27.15%</td>
+              <td>Deep learning did not outperform simpler models</td>
+            </tr>
+            <tr>
+              <td>Sequential Hybrid Weekly</td>
+              <td>17.13%</td>
+              <td>25.80%</td>
+              <td>Competitive hybrid performance</td>
+            </tr>
+            <tr>
+              <td>Parallel Hybrid Weekly</td>
+              <td class="mape-good">17.07%</td>
+              <td class="mape-best">23.31%</td>
+              <td>Best weekly result for both books</td>
+            </tr>
+            <tr>
+              <td>SARIMA Monthly</td>
+              <td class="mape-best">16.21%</td>
+              <td>35.96%</td>
+              <td>Best overall result for Caterpillar</td>
+            </tr>
+            <tr>
+              <td>XGBoost Monthly</td>
+              <td>16.74%</td>
+              <td>40.42%</td>
+              <td>Strong for Caterpillar, weak for Alchemist</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section>
+      <div class="section-label">Methodology</div>
+      <h2 class="section-title">End-to-end forecasting workflow</h2>
+      <p class="section-desc">
+        The project followed a structured analytical process, moving from exploration and diagnostics through to
+        model development and evaluation.
       </p>
 
       <div class="pipeline-steps">
         <div class="pipeline-step">
           <div class="step-num">01</div>
           <div class="step-body">
-            <div class="step-title">Exploratory Data Analysis</div>
-            <div class="step-desc">Reviewed sales movement, unusual observations, trend behaviour and seasonality signals.</div>
+            <div class="step-title">Data preparation</div>
+            <div class="step-desc">Cleaned and transformed historical sales data into weekly and monthly time series formats.</div>
           </div>
         </div>
 
         <div class="pipeline-step">
           <div class="step-num">02</div>
           <div class="step-body">
-            <div class="step-title">Decomposition & Stationarity</div>
-            <div class="step-desc">Used decomposition, ADF testing and visual inspection to understand trend, seasonality and stability over time.</div>
+            <div class="step-title">Exploratory analysis</div>
+            <div class="step-desc">Reviewed sales patterns, demand spikes, volatility and long-term movement across both books.</div>
           </div>
         </div>
 
         <div class="pipeline-step">
           <div class="step-num">03</div>
           <div class="step-body">
-            <div class="step-title">ACF / PACF Analysis</div>
-            <div class="step-desc">Checked autocorrelation patterns to guide ARIMA-style modelling decisions.</div>
+            <div class="step-title">Decomposition and diagnostics</div>
+            <div class="step-desc">Used decomposition, ADF testing, ACF/PACF and residual checks to understand model suitability.</div>
           </div>
         </div>
 
         <div class="pipeline-step">
           <div class="step-num">04</div>
           <div class="step-body">
-            <div class="step-title">Model Development</div>
-            <div class="step-desc">Compared statistical, machine learning and hybrid approaches including Auto ARIMA, XGBoost and LSTM.</div>
+            <div class="step-title">Model development</div>
+            <div class="step-desc">Built ARIMA, SARIMA, XGBoost, LSTM, sequential hybrid and parallel hybrid forecasting models.</div>
           </div>
         </div>
 
@@ -167,59 +368,76 @@
           <div class="step-num">05</div>
           <div class="step-body">
             <div class="step-title">Evaluation</div>
-            <div class="step-desc">Assessed forecasts against actual values using error metrics and residual checks.</div>
+            <div class="step-desc">Compared forecasts using MAE, RMSE and MAPE to identify the most accurate and useful approach.</div>
           </div>
         </div>
       </div>
+    </section>
 
-      <h2>Key Findings</h2>
+    <div class="divider"></div>
+
+    <section>
+      <div class="section-label">Key Takeaways</div>
+      <h2 class="section-title">What the project demonstrated</h2>
+
       <div class="insight-grid">
         <div class="insight-card">
-          <h3>Trend and seasonality</h3>
-          <p>Both titles showed identifiable demand behaviour that could be analysed using time series methods.</p>
+          <span class="insight-number">01</span>
+          <h3>Model choice matters</h3>
+          <p>Different datasets favoured different forecasting approaches, so model selection needed to be evidence-led.</p>
         </div>
         <div class="insight-card">
-          <h3>Model comparison mattered</h3>
-          <p>No single model should be trusted blindly; the strongest approach came from comparing several methods.</p>
+          <span class="insight-number">02</span>
+          <h3>Simpler models stayed competitive</h3>
+          <p>Classical statistical methods performed strongly and, in some cases, outperformed more complex ML models.</p>
         </div>
         <div class="insight-card">
-          <h3>Forecasts supported decisions</h3>
-          <p>The models produced insight that could help guide ordering, stock planning and inventory management.</p>
+          <span class="insight-number">03</span>
+          <h3>Forecasts need business context</h3>
+          <p>Accuracy metrics are useful, but the real value comes from supporting procurement and inventory decisions.</p>
         </div>
       </div>
+    </section>
 
-      <h2>Business Impact</h2>
-      <p>
-        Forecasting gives businesses a more evidence-led way to plan stock. Even when uncertainty remains, a structured model provides a stronger baseline than relying on judgement alone.
-      </p>
-      <p>
-        Better demand planning can reduce stock shortages, minimise excess inventory and improve procurement timing.
-      </p>
+    <div class="divider"></div>
 
-      <div class="callout-card">
-        <p>
-          <strong>Outcome:</strong> this project demonstrates how historical sales data can be transformed into actionable business intelligence through a repeatable forecasting workflow.
-        </p>
-      </div>
+    <section>
+      <div class="section-label">Tools</div>
+      <h2 class="section-title" style="margin-bottom:2rem;">Technologies used</h2>
 
-      <h2>Tools & Technologies</h2>
       <div class="tools-grid">
         <div class="tool-item"><span class="tool-icon">py</span> Python</div>
         <div class="tool-item"><span class="tool-icon">pd</span> Pandas</div>
         <div class="tool-item"><span class="tool-icon">np</span> NumPy</div>
-        <div class="tool-item"><span class="tool-icon">mp</span> Matplotlib</div>
         <div class="tool-item"><span class="tool-icon">sm</span> Statsmodels</div>
-        <div class="tool-item"><span class="tool-icon">aa</span> Auto ARIMA</div>
+        <div class="tool-item"><span class="tool-icon">pm</span> pmdarima</div>
         <div class="tool-item"><span class="tool-icon">xg</span> XGBoost</div>
         <div class="tool-item"><span class="tool-icon">tf</span> TensorFlow</div>
+        <div class="tool-item"><span class="tool-icon">mp</span> Matplotlib</div>
+        <div class="tool-item"><span class="tool-icon">nb</span> Google Colab</div>
+        <div class="tool-item"><span class="tool-icon">gh</span> GitHub</div>
       </div>
-
     </section>
 
-  </main>
+    <div class="divider"></div>
+
+    <section style="padding-bottom:5rem;">
+      <div class="section-label">Next Step</div>
+      <h2 class="section-title">Explore the full project</h2>
+      <p class="section-desc">
+        The full repository contains the supporting notebooks, preprocessing steps, model outputs and evaluation work.
+      </p>
+
+      <div class="hero-actions">
+        <a href="https://github.com/zechvincent-lab/Projects" target="_blank" class="btn-primary">Open GitHub Repository →</a>
+        <a href="index.html" class="btn-ghost">Back to homepage</a>
+      </div>
+    </section>
+
+  </div>
 
   <footer>
-    <p>© 2026 <a href="index.html">Zech George</a> · Data Portfolio · Built with intent.</p>
+    <p>© 2026 <a href="index.html">Zech George</a> · zechgeorge.com</p>
   </footer>
 
 </body>
