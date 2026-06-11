@@ -77,3 +77,25 @@ footer {
     color: #666;
     font-size: 0.9rem;
 }
+.card h4 {
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-size: 0.95rem;
+}
+
+.card ul {
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #111;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
