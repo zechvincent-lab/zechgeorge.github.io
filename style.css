@@ -136,3 +136,25 @@ footer {
     text-decoration: none;
     border-radius: 6px;
 }
+
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
