@@ -140,3 +140,36 @@ footer {
     color: #666;
     font-size: 0.9rem;
 }
+
+.top-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 20px;
+    background: white;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-left a,
+.nav-right a {
+    text-decoration: none;
+    color: #111;
+    font-weight: 500;
+    margin: 0 10px;
+    font-size: 0.95rem;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+    text-decoration: underline;
+}
+
+/* make right side more compact */
+.nav-right a {
+    font-size: 1.1rem;
+}
