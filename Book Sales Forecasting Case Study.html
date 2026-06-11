@@ -2,41 +2,194 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Projects | Zech George</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Sales Forecasting Case Study | Zech George</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<nav class="nav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="cv.html">CV</a>
-</nav>
-
 <header class="page-header">
-    <h1>Projects</h1>
-    <p>Data science and forecasting case studies</p>
+
+    <h1>Book Sales Forecasting Case Study</h1>
+
+    <p>
+        Forecasting demand using historical sales data for
+        <em>The Alchemist</em> and
+        <em>The Very Hungry Caterpillar</em>
+    </p>
+
 </header>
 
-<section class="projects-grid">
+<section>
 
-    <div class="card">
-        <h3>Book Sales Forecasting</h3>
+    <h2>Project Overview</h2>
 
-        <img src="images/forecast.png" alt="Forecast plot" />
+    <p>
+        This project explores a range of forecasting techniques,
+        from classical statistical approaches through to machine
+        learning models, using historical book sales data.
+    </p>
 
-        <p>
-            Time series forecasting for The Alchemist and The Very Hungry Caterpillar.
-        </p>
-
-        <a href="https://github.com/zechvincent-lab/Projects" target="_blank">
-            View Full Repository
-        </a>
-    </div>
+    <p>
+        By analysing trends, seasonality and demand patterns,
+        the aim was to determine whether future sales could be
+        forecast accurately enough to support business decision-making.
+    </p>
 
 </section>
+
+<section>
+
+    <h2>Business Problem</h2>
+
+    <p>
+        By analysing sales data from Nielsen's dataset,
+        this project investigated whether identifiable trends
+        and seasonal patterns could be leveraged to generate
+        accurate forecasts.
+    </p>
+
+    <p>
+        Reliable forecasts can help organisations improve
+        procurement planning, inventory management and stock
+        replenishment decisions.
+    </p>
+
+</section>
+
+<section>
+
+    <h2>Dataset</h2>
+
+    <p>
+        The analysis focused on two books:
+    </p>
+
+    <ul>
+        <li>The Alchemist</li>
+        <li>The Very Hungry Caterpillar</li>
+    </ul>
+
+    <p>
+        Historical sales data was cleaned, transformed and prepared
+        for time series analysis using Python.
+    </p>
+
+</section>
+
+<section>
+
+    <h2>Methodology</h2>
+
+    <p>
+        The forecasting workflow followed a structured analytical process:
+    </p>
+
+    <ul>
+        <li>Exploratory Data Analysis (EDA)</li>
+        <li>Time Series Decomposition</li>
+        <li>Stationarity Testing (ADF)</li>
+        <li>Autocorrelation Analysis (ACF/PACF)</li>
+        <li>Auto ARIMA Model Selection</li>
+        <li>Residual Diagnostics</li>
+        <li>Forecast Evaluation</li>
+    </ul>
+
+</section>
+
+<section>
+
+    <h2>Forecast Visualisations</h2>
+
+    <p>
+        Key outputs from the analysis are displayed below.
+    </p>
+
+    <img src="images/forecast.png" alt="Forecast vs Actual">
+
+    <p>
+        Forecast values were compared against actual observations
+        to evaluate model performance and forecasting accuracy.
+    </p>
+
+</section>
+
+<section>
+
+    <h2>Key Findings</h2>
+
+    <ul>
+        <li>Clear trend and seasonal behaviour was identified within the sales data.</li>
+        <li>Time series decomposition revealed meaningful underlying demand patterns.</li>
+        <li>ARIMA-based forecasting models captured much of the observed behaviour.</li>
+        <li>Forecast performance demonstrated the value of historical sales data for future planning.</li>
+    </ul>
+
+</section>
+
+<section>
+
+    <h2>Business Impact</h2>
+
+    <p>
+        Forecasting enables organisations to make more informed
+        inventory and procurement decisions.
+    </p>
+
+    <p>
+        Improved demand planning can reduce stock shortages,
+        minimise excess inventory and support more efficient
+        resource allocation.
+    </p>
+
+    <p>
+        This project demonstrates how statistical forecasting
+        techniques can transform historical sales data into
+        actionable business intelligence.
+    </p>
+
+</section>
+
+<section>
+
+    <h2>Tools & Technologies</h2>
+
+    <ul>
+        <li>Python</li>
+        <li>Pandas</li>
+        <li>NumPy</li>
+        <li>Matplotlib</li>
+        <li>Statsmodels</li>
+        <li>Auto ARIMA</li>
+        <li>Google Colab</li>
+    </ul>
+
+</section>
+
+<section>
+
+    <h2>Project Repository</h2>
+
+    <p>
+        Full notebooks, preprocessing steps, model development,
+        evaluation and supporting documentation are available
+        within the project repository.
+    </p>
+
+    <a class="btn"
+       href="https://github.com/zechvincent-lab/Projects"
+       target="_blank">
+        View Repository
+    </a>
+
+</section>
+
+<footer>
+
+    <p>© 2026 Zech George • Data Portfolio</p>
+
+</footer>
 
 </body>
 </html>
