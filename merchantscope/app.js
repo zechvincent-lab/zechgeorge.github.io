@@ -58,18 +58,18 @@ async function loadKeylineReview() {
 
 const HISTORY_KEY = "merchantscope-demo-history";
 async function loadHistory() {
-  const stored = localStorage.getItem(HISTORY_KEY);
+  const stored = sessionStorage.getItem(HISTORY_KEY);
   if (stored) return JSON.parse(stored);
   const seedResponse = await fetch("merchantscope/data/history-seed.json");
   const seed = await seedResponse.json();
-  localStorage.setItem(HISTORY_KEY, JSON.stringify(seed));
+  sessionStorage.setItem(HISTORY_KEY, JSON.stringify(seed));
   return seed;
 }
 function saveHistory(entries) {
-  localStorage.setItem(HISTORY_KEY, JSON.stringify(entries));
+  sessionStorage.setItem(HISTORY_KEY, JSON.stringify(entries));
 }
 function upsertHistory(entry) {
-  const entries = JSON.parse(localStorage.getItem(HISTORY_KEY) || "[]");
+  const entries = JSON.parse(sessionStorage.getItem(HISTORY_KEY) || "[]");
   const filtered = entries.filter((e) => !(e.companyNumber === entry.companyNumber && e.source === entry.source));
   filtered.unshift(entry);
   saveHistory(filtered);
@@ -165,7 +165,7 @@ function wireRecentRows(container) {
   container.querySelectorAll(".remove-history").forEach((button) => button.addEventListener("click", async (event) => {
     event.stopPropagation();
     const { number, source } = event.currentTarget.dataset;
-    const entries = JSON.parse(localStorage.getItem(HISTORY_KEY) || "[]");
+    const entries = JSON.parse(sessionStorage.getItem(HISTORY_KEY) || "[]");
     saveHistory(entries.filter((e) => !(e.companyNumber === number && e.source === source)));
     await renderRoute();
   }));
