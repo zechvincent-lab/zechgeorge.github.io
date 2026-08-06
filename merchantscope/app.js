@@ -114,6 +114,12 @@ function navigate(path) {
 
 async function renderRoute() {
   const hash = location.hash.replace(/^#/, "") || "/";
+  // In-page section anchors (the side-nav's #brief, #dd-conclusion, etc.)
+  // share the same location.hash the router listens on, but they're not
+  // routes - every real route starts with "/" (#/, #/history, #/company/...).
+  // Without this check, clicking a section link bounced the whole app to
+  // Home, because "brief" matched none of the route checks below.
+  if (!hash.startsWith("/")) return;
   const [path, queryString] = hash.split("?");
   const params = new URLSearchParams(queryString || "");
   const companyMatch = path.match(/^\/company\/([^/]+)$/);
