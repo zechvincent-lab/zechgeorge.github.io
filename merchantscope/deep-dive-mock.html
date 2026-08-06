@@ -1,0 +1,662 @@
+<title>Deep Dive — Thornbury Building Supplies Ltd (Mock)</title>
+<style>
+:root {
+  color-scheme: dark;
+  --void: #06070a;
+  --ink: #eef2f3;
+  --muted: #8b95a1;
+  --surface: #0e1115;
+  --surface-2: #151a1f;
+  --line: rgba(255,255,255,.1);
+  --line-strong: rgba(255,255,255,.16);
+  --signal: #3ee08a;
+  --signal-dim: rgba(62,224,138,.12);
+  --green: var(--signal);
+  --lime: var(--signal);
+  --amber: #f0b429;
+  --red: #ef5f6b;
+  --violet: #9b8cf2;
+  --shadow: 0 24px 60px rgba(0,0,0,.55);
+  --mono: ui-monospace, "SF Mono", "Cascadia Code", "Courier New", monospace;
+  font-family: -apple-system, ui-sans-serif, system-ui, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--void); color: var(--ink); }
+button, input { font: inherit; }
+button { cursor: pointer; }
+
+.shell { display: flex; flex-direction: column; min-height: 100vh; }
+.topbar { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; gap: clamp(20px, 3vw, 40px);
+  padding: 14px clamp(20px, 4vw, 44px); border-bottom: 1px solid var(--line); background: var(--void); }
+.topbar::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 1px; background: linear-gradient(90deg, var(--signal), transparent 55%); }
+.brand { color: inherit; text-decoration: none; display: flex; align-items: baseline; gap: 10px; font-weight: 700; }
+.brand-mark { font-family: var(--mono); font-size: 15px; font-weight: 700; letter-spacing: -.02em; color: var(--ink); }
+.brand-mark::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 9px; background: var(--signal); box-shadow: 0 0 9px var(--signal); vertical-align: middle; }
+.brand-desc { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.topnav { display: flex; align-items: center; gap: 6px; }
+.topnav a { display: flex; align-items: center; gap: 8px; color: var(--muted); text-decoration: none; padding: 9px 14px; border-radius: 8px; font-size: 13px; font-weight: 600; }
+.topnav a:hover, .topnav a:focus-visible { color: var(--ink); background: rgba(255,255,255,.04); }
+.topnav a.active { color: var(--ink); background: var(--signal-dim); font-weight: 700; }
+.topnav a .rail-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; opacity: .55; flex: 0 0 auto; }
+.topnav a.active .rail-dot { background: var(--signal); opacity: 1; box-shadow: 0 0 8px var(--signal); }
+.view { min-width: 0; flex: 1; padding: clamp(20px, 3vw, 44px); }
+
+h1 { margin: 0; max-width: 760px; font-size: clamp(28px, 4vw, 44px); line-height: 1.08; font-weight: 700; letter-spacing: -.015em; }
+
+.readout-strip { display: flex; flex-wrap: wrap; gap: 0; margin: 0 0 22px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); overflow: hidden; }
+.readout-cell { flex: 1 1 150px; padding: 13px 16px; border-right: 1px solid var(--line); }
+.readout-cell:last-child { border-right: 0; }
+.readout-cell .l { display: block; color: var(--muted); font-size: 11px; }
+.readout-cell .n { display: block; font-family: var(--mono); font-variant-numeric: tabular-nums; font-size: 18px; font-weight: 700; margin-top: 3px; }
+.readout-cell .n small { font-weight: 600; color: var(--muted); font-size: 11px; }
+.readout-cell.class-locked .n { color: var(--signal); }
+.readout-cell.class-tracking .n { color: var(--amber); }
+.readout-cell.class-lost .n { color: var(--red); }
+.readout-cell .n.negative { color: var(--red); }
+.readout-cell .note { display: block; color: var(--muted); font-size: 11px; margin-top: 4px; line-height: 1.35; }
+
+.status-mock { max-width: 74ch; }
+
+.report-pin {
+  display: flex; align-items: center; gap: clamp(16px, 3vw, 36px); flex-wrap: wrap;
+  padding: 15px clamp(16px, 2.4vw, 26px); margin: 0 0 22px; background: var(--surface);
+  border: 1px solid var(--line); border-bottom: 1px solid var(--signal); border-radius: 12px;
+  box-shadow: 0 16px 32px -20px rgba(0,0,0,.7);
+}
+.report-pin-id { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.report-pin-id strong { font-size: 15px; font-weight: 700; }
+.report-pin-number { font-family: var(--mono); font-size: 11px; color: var(--muted); }
+.report-pin-stance { flex: 0 0 auto; display: flex; align-items: center; gap: 9px; font-family: var(--mono); font-size: clamp(18px, 2.2vw, 23px); font-weight: 800; letter-spacing: -.01em; white-space: nowrap; }
+.report-pin-stance .pin-dot { width: 9px; height: 9px; border-radius: 50%; flex: 0 0 auto; display: inline-block; }
+.report-pin-stance.class-locked { color: var(--signal); }
+.report-pin-stance.class-locked .pin-dot { background: var(--signal); box-shadow: 0 0 10px var(--signal); }
+.report-pin-stance.class-tracking { color: var(--amber); }
+.report-pin-stance.class-tracking .pin-dot { background: var(--amber); box-shadow: 0 0 10px var(--amber); }
+.report-pin-stance.class-lost { color: var(--red); }
+.report-pin-stance.class-lost .pin-dot { background: var(--red); box-shadow: 0 0 10px var(--red); }
+.report-pin-metric { flex: 0 0 auto; display: flex; flex-direction: column; gap: 2px; }
+.report-pin-metric .l { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+.report-pin-metric .n { font-family: var(--mono); font-variant-numeric: tabular-nums; font-size: 16px; font-weight: 700; }
+.report-pin-metric .n small { font-weight: 600; color: var(--muted); font-size: 11px; }
+
+.workspace { display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 36px; }
+.side-nav { position: sticky; top: 20px; align-self: start; max-height: calc(100vh - 40px); overflow-y: auto; }
+.side-nav nav { display: grid; gap: 5px; }
+.side-nav a { display: flex; align-items: center; gap: 9px; color: var(--muted); text-decoration: none; padding: 8px 10px; border-radius: 6px; font-size: 13px; font-family: var(--mono); }
+.side-nav a::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: currentColor; opacity: .45; flex: 0 0 auto; }
+.side-nav a:hover { color: var(--signal); background: var(--signal-dim); font-weight: 700; }
+.side-nav a:hover::before { opacity: 1; box-shadow: 0 0 6px var(--signal); }
+
+.section { scroll-margin-top: 24px; margin-bottom: 22px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: clamp(20px, 3vw, 34px); }
+.section h2 { margin: 0 0 8px; font-size: clamp(19px, 2.2vw, 25px); font-weight: 700; letter-spacing: -.01em; }
+.section h3 { font-size: 15px; margin: 26px 0 12px; }
+.section h3:first-of-type { margin-top: 4px; }
+.section-lead { margin: 0 0 22px; max-width: 74ch; color: var(--muted); line-height: 1.55; }
+.section p { line-height: 1.55; max-width: 76ch; }
+
+.tag { font-family: var(--mono); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+.tag.low { color: var(--signal); }
+.tag.medium { color: var(--amber); }
+.tag.high, .tag.critical { color: var(--red); }
+.tag.violet { color: var(--violet); }
+
+.notice, .warning { position: relative; max-width: 74ch; border: 1px solid var(--line); border-radius: 9px; background: var(--surface-2); padding: 16px 18px 16px 96px; color: var(--ink); line-height: 1.5; margin: 16px 0; }
+.notice::before, .warning::before {
+  content: "NOTE"; position: absolute; left: 18px; top: 16px; font-family: var(--mono); font-size: 11px;
+  font-weight: 700; letter-spacing: .1em; color: var(--signal);
+}
+.warning::before { content: "FLAG"; color: var(--amber); }
+.warning { border-color: rgba(240,180,41,.3); }
+
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { padding: 12px 12px; border-bottom: 1px solid var(--line); text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+th:first-child, td:first-child { text-align: left; white-space: normal; }
+th { color: var(--muted); font-size: 11px; font-family: var(--mono); text-transform: uppercase; letter-spacing: .06em; }
+.reconciliation-table th, .reconciliation-table td { vertical-align: top; }
+.reconciliation-table .evidence-cell { min-width: 220px; text-align: left; white-space: normal; }
+.reconciliation-table .status-cell { text-align: right; font-family: var(--mono); font-weight: 700; }
+
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.list-card { border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.list-card h3 { margin: 0; padding: 14px 16px; background: var(--surface-2); font-size: 15px; }
+.list-card ul { list-style: none; margin: 0; padding: 0; }
+.list-card li { padding: 13px 16px; border-top: 1px solid var(--line); }
+.list-card li small { color: var(--muted); display: block; margin-top: 4px; line-height: 1.4; }
+
+.risk { display: grid; grid-template-columns: auto 1fr; gap: 14px; padding: 17px 0; border-bottom: 1px solid var(--line); }
+.risk:last-child { border-bottom: 0; }
+.risk h3 { margin: 0 0 7px; font-size: 15px; }
+.risk p { margin: 5px 0; max-width: 74ch; color: var(--muted); line-height: 1.45; }
+.risk strong { color: var(--ink); }
+.risk-register-item { grid-template-columns: 90px minmax(0, 1fr); gap: 0; padding: 0; margin: 12px 0; overflow: hidden; border: 1px solid var(--line); border-radius: 10px; }
+.risk-register-item > div { padding: 16px 18px; }
+.risk-severity { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 9px; width: 90px; padding: 16px 8px; background: var(--surface-2); border-right: 1px solid var(--line); }
+.risk-severity b { font-size: 11px; font-family: var(--mono); font-weight: 700; letter-spacing: .07em; text-transform: uppercase; }
+.risk-register-item.severity-low .risk-severity b { color: var(--signal); }
+.risk-register-item.severity-medium .risk-severity b { color: var(--amber); }
+.risk-register-item.severity-high .risk-severity b { color: #f0763f; }
+.risk-register-item.severity-critical .risk-severity b { color: var(--red); }
+.signal-bars { display: inline-flex; align-items: flex-end; gap: 2px; height: 12px; margin-right: 7px; vertical-align: -1px; }
+.signal-bars i { display: block; width: 3px; border-radius: 1px; background: var(--line); }
+.signal-bars-severity { height: 16px; margin-right: 0; gap: 3px; }
+.signal-bars-severity i { width: 4px; }
+.signal-bars-severity i:nth-child(1) { height: 4px; }
+.signal-bars-severity i:nth-child(2) { height: 8px; }
+.signal-bars-severity i:nth-child(3) { height: 12px; }
+.signal-bars-severity i:nth-child(4) { height: 16px; }
+.signal-bars-severity.severity-low i.on { background: var(--signal); }
+.signal-bars-severity.severity-medium i.on { background: var(--amber); }
+.signal-bars-severity.severity-high i.on { background: #f0763f; }
+.signal-bars-severity.severity-critical i.on { background: var(--red); }
+
+.range { font-family: var(--mono); font-variant-numeric: tabular-nums; font-size: clamp(26px, 3.6vw, 38px); font-weight: 700; letter-spacing: -.01em; }
+
+.trend-chart { margin: 18px 0; }
+.trend-chart svg { width: 100%; height: auto; }
+.trend-legend { display: flex; flex-wrap: wrap; gap: 16px; margin: 10px 0 0; }
+.trend-legend-item { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; color: var(--muted); }
+.trend-legend-item i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; }
+
+.former-officers summary, .diagnostics summary { cursor: pointer; font-weight: 700; }
+.diagnostics summary { color: var(--amber); }
+
+@media (max-width: 920px) {
+  .workspace { grid-template-columns: minmax(0, 1fr); }
+  .side-nav { display: none; }
+  .split { grid-template-columns: 1fr; }
+  .readout-strip { flex-direction: column; }
+  .readout-cell { border-right: 0; border-bottom: 1px solid var(--line); }
+  .readout-cell:last-child { border-bottom: 0; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* ---- additive, mock-only components (same token language as above) ---- */
+.bridge-row { display: grid; grid-template-columns: 1fr 110px 70px; align-items: center; gap: 12px; padding: 9px 0; border-bottom: 1px solid var(--line); font-size: 13.5px; }
+.bridge-row:last-of-type { border-bottom: none; }
+.bridge-row .barwrap { position: relative; height: 8px; background: var(--surface-2); border-radius: 2px; overflow: hidden; }
+.bridge-row .bar { position: absolute; top: 0; bottom: 0; left: 0; border-radius: 2px; }
+.bridge-row .bar.base { background: var(--muted); }
+.bridge-row .bar.add { background: var(--signal); }
+.bridge-row .bar.sub { background: var(--red); }
+.bridge-row .amt { font-family: var(--mono); text-align: right; font-variant-numeric: tabular-nums; }
+.bridge-row .amt.pos { color: var(--signal); }
+.bridge-row .amt.pos::before { content: "+ "; }
+.bridge-row .amt.neg { color: var(--red); }
+.bridge-row .amt.neg::before { content: "\2013 "; }
+.bridge-final { display: flex; justify-content: space-between; align-items: baseline; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line-strong); }
+
+.scenario-row { display: grid; grid-template-columns: 60px 1fr 100px; align-items: center; gap: 14px; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: 13px; }
+.scenario-row:last-child { border-bottom: none; }
+.scenario-bar-track { height: 8px; background: var(--surface-2); border-radius: 2px; position: relative; }
+.scenario-bar { position: absolute; top: 0; bottom: 0; right: 50%; border-radius: 2px; }
+.scenario-mid { position: absolute; left: 50%; top: -3px; bottom: -3px; width: 1px; background: var(--muted); }
+.scenario-row .impact { font-family: var(--mono); text-align: right; font-variant-numeric: tabular-nums; }
+
+.sparkrow { display: flex; align-items: center; gap: 14px; padding: 11px 0; border-bottom: 1px solid var(--line); }
+.sparkrow:last-child { border-bottom: none; }
+.sparkrow .name { width: 108px; font-size: 13.5px; font-weight: 600; flex-shrink: 0; }
+.sparkrow svg { flex-shrink: 0; }
+.sparkrow .figs { margin-left: auto; text-align: right; font-family: var(--mono); font-size: 13px; white-space: nowrap; }
+.sparkrow .figs .gm { color: var(--muted); font-size: 11.5px; display: block; }
+
+.category-block { border-bottom: 1px solid var(--line); }
+.category-block:last-child { border-bottom: none; }
+summary.category-summary {
+  list-style: none; display: grid; grid-template-columns: 1fr 90px 70px 16px; align-items: center;
+  gap: 14px; padding: 12px 4px; cursor: pointer; font-size: 13.5px; border-radius: 6px;
+}
+summary.category-summary::-webkit-details-marker { display: none; }
+summary.category-summary:hover { background: var(--signal-dim); }
+.category-summary .catname { font-weight: 600; }
+.category-summary .num { font-family: var(--mono); text-align: right; }
+.category-summary .chev { text-align: center; color: var(--muted); transition: transform .15s ease; }
+details[open] > .category-summary .chev { transform: rotate(90deg); color: var(--signal); }
+.sku-sub { padding: 4px 4px 16px; }
+.cat-flag { font-size: 12px; color: var(--amber); margin: -2px 0 10px; font-weight: 700; }
+
+.badge-preview { font-family: var(--mono); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--violet); margin-left: 10px; }
+</style>
+
+<div class="shell">
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="MerchantScope — Acquisition Intelligence Hub, home">
+      <span class="brand-mark">MerchantScope</span>
+      <span class="brand-desc">Acquisition Intelligence Hub</span>
+    </a>
+    <nav class="topnav" aria-label="Primary">
+      <a href="#"><i class="rail-dot" aria-hidden="true"></i><span class="label-text">Home</span></a>
+      <a href="#" class="active"><i class="rail-dot" aria-hidden="true"></i><span class="label-text">Report</span></a>
+      <a href="#"><i class="rail-dot" aria-hidden="true"></i><span class="label-text">Settings</span></a>
+    </nav>
+  </header>
+
+  <main class="view">
+    <section class="page">
+      <p class="warning status-mock"><strong>Mock data.</strong> Every figure on this page is invented for discussion purposes — built to show what Deep Dive will surface once wired to a target's real Sage, Xero or trade-ERP export. Nothing here becomes a real feature until this shape is agreed.</p>
+
+      <header class="report-pin">
+        <div class="report-pin-id"><strong>Thornbury Building Supplies Ltd</strong><span class="report-pin-number">Deep Dive · BisTrack + Sage 200 connected · FY2023</span></div>
+        <div class="report-pin-stance class-tracking"><span class="pin-dot" aria-hidden="true"></span>Investigate</div>
+        <div class="report-pin-metric"><span class="l">Combined confidence</span><span class="n">Medium</span></div>
+        <div class="report-pin-metric"><span class="l">Turnover FY23</span><span class="n">£14.2m<small> · 4 branches</small></span></div>
+      </header>
+
+      <div class="workspace">
+        <aside class="side-nav" aria-label="Deep Dive sections">
+          <nav>
+            <a href="#conclusion">01 Combined conclusion</a>
+            <a href="#value">02 Where the value is</a>
+            <a href="#sku">03 Product &amp; SKU margin</a>
+            <a href="#risk">04 Where the risk is</a>
+            <a href="#reconciliation">05 Reconciliation</a>
+            <a href="#coverage">06 Evidence coverage</a>
+            <a href="#forecast">07 Forecast</a>
+          </nav>
+        </aside>
+
+        <article id="report">
+
+          <section id="conclusion" class="section">
+            <h2>Combined diligence conclusion</h2>
+            <p class="section-lead">Phase one (Companies House public record) combined with phase two (the target's own accounts) using a fixed rule: the combined stance is the more severe of the two, never an average.</p>
+            <div class="readout-strip">
+              <div class="readout-cell class-locked"><span class="l">Phase one stance</span><span class="n">Proceed</span></div>
+              <div class="readout-cell"><span class="l">Strategic size fit</span><span class="n">In range</span></div>
+              <div class="readout-cell"><span class="l">Phase one confidence</span><span class="n">High</span></div>
+              <div class="readout-cell class-tracking"><span class="l">Phase two confidence</span><span class="n">Medium</span></div>
+              <div class="readout-cell class-tracking"><span class="l">Evidence-integrity open</span><span class="n">1</span></div>
+              <div class="readout-cell"><span class="l">Business-quality open</span><span class="n">4</span></div>
+            </div>
+            <p>Phase one's public-record screen was clean: no insolvency history, no adverse charges, filed accounts reconcile, and Thornbury sits comfortably within strategic size range. <strong>Phase two is the reason this combined stance is Investigate rather than Proceed.</strong> One evidence-integrity item is open — the £94.5k manual journal to cost of sales posted two days before FY2023 year end and reversed three days into the new period (§04) — which is quarantined from valuation until the seller explains it. Everything else phase two surfaces (rebate dependency, customer/debtor concentration, stock under-provisioning, Trowbridge's two-year decline) is a business-quality signal: real, and highly relevant to price and deal structure, but not something this tool decides for you, and not something that alone would ever stop this deal.</p>
+
+            <h3>Open items</h3>
+            <article class="risk risk-register-item severity-high">
+              <span class="risk-severity"><span class="signal-bars signal-bars-severity severity-high" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><b>high</b></span>
+              <div>
+                <h3>Dec-2023 manual journal to cost of sales — unexplained</h3>
+                <p><strong>Category:</strong> Evidence-integrity — could change the combined stance</p>
+                <p><strong>Evidence:</strong> £94.5k credit posted 29 Dec 2023 by a director-level user, reversed 3 Jan 2024, no supporting schedule attached. See §05.</p>
+                <p><strong>Next action:</strong> Written, evidenced explanation from the seller's finance team. If none is received, or the explanation confirms the adverse reading, this escalates to Stop.</p>
+              </div>
+            </article>
+            <article class="risk risk-register-item severity-medium">
+              <span class="risk-severity"><span class="signal-bars signal-bars-severity severity-medium" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><b>medium</b></span>
+              <div>
+                <h3>Buying-group rebate — 2 of 3 supplier agreements not yet provided</h3>
+                <p><strong>Category:</strong> Business-quality — affects price / structure only, not stance</p>
+                <p><strong>Evidence:</strong> High case removes up to £299k of adjusted EBITDA on change of control (§02).</p>
+              </div>
+            </article>
+            <article class="risk risk-register-item severity-medium">
+              <span class="risk-severity"><span class="signal-bars signal-bars-severity severity-medium" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><b>medium</b></span>
+              <div>
+                <h3>Fenwick Construction — 11% of revenue, 40% of the 90+ overdue balance</h3>
+                <p><strong>Category:</strong> Business-quality — affects price / structure only, not stance</p>
+                <p><strong>Evidence:</strong> £51k of the reported £85k overdue is a contractual retention not yet due; £34k is genuine arrears. Revenue is otherwise diversified — top 20 accounts hold 53%, not the 80% the standard heuristic assumes (§04).</p>
+              </div>
+            </article>
+            <article class="risk risk-register-item severity-medium">
+              <span class="risk-severity"><span class="signal-bars signal-bars-severity severity-medium" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><b>medium</b></span>
+              <div>
+                <h3>Stock ageing — ~£321k under-provisioned</h3>
+                <p><strong>Category:</strong> Business-quality — affects price / structure only, not stance</p>
+                <p><strong>Evidence:</strong> £361k of stock with no movement &gt;12 months against only £40k of held provision; a further £186k is supplier consignment stock not yet owned, pending title-transfer confirmation (§04).</p>
+              </div>
+            </article>
+            <article class="risk risk-register-item severity-medium">
+              <span class="risk-severity"><span class="signal-bars signal-bars-severity severity-medium" aria-hidden="true"><i class="on"></i><i class="on"></i><i></i><i></i></span><b>medium</b></span>
+              <div>
+                <h3>Trowbridge branch — two consecutive years of like-for-like decline</h3>
+                <p><strong>Category:</strong> Business-quality — affects price / structure only, not stance</p>
+                <p><strong>Evidence:</strong> Also the lowest-margin branch (§02).</p>
+              </div>
+            </article>
+
+            <p class="notice">This stance reflects completeness and internal consistency of the evidence — not an opinion on value, not a recommendation to buy. "Proceed" means proceed to deeper diligence, not to completion. Resolving evidence-integrity items may change the stance; resolving business-quality items may change the price or structure, but neither is decided by this tool.</p>
+          </section>
+
+          <section id="value" class="section">
+            <h2>Where the value is</h2>
+            <p class="section-lead">Statutory profit understates trading performance once genuine one-offs and related-party items are normalised — but a third of the adjusted figure depends on a buying-group rebate that may not survive a change of control.</p>
+
+            <h3>Adjusted EBITDA bridge — FY2023</h3>
+            <div class="bridge-row">
+              <span>Statutory operating profit</span>
+              <div class="barwrap"><div class="bar base" style="width:70%"></div></div>
+              <span class="amt">£612k</span>
+            </div>
+            <div class="bridge-row">
+              <span>Director remuneration above market rate</span>
+              <div class="barwrap"><div class="bar add" style="width:21%"></div></div>
+              <span class="amt pos">£185k</span>
+            </div>
+            <div class="bridge-row">
+              <span>Related-party rent above independent valuation</span>
+              <div class="barwrap"><div class="bar add" style="width:7%"></div></div>
+              <span class="amt pos">£64k</span>
+            </div>
+            <div class="bridge-row">
+              <span>One-off ERP migration costs</span>
+              <div class="barwrap"><div class="bar add" style="width:7%"></div></div>
+              <span class="amt pos">£58k</span>
+            </div>
+            <div class="bridge-row">
+              <span>Non-trading gain on yard disposal (excluded)</span>
+              <div class="barwrap"><div class="bar sub" style="width:5%"></div></div>
+              <span class="amt neg">£40k</span>
+            </div>
+            <div class="bridge-final">
+              <span style="font-weight:600;">Adjusted EBITDA</span>
+              <span class="range">£879k <small style="font-family:var(--mono);font-size:13px;color:var(--muted);">6.2%</small></span>
+            </div>
+            <p class="notice">All add-backs approved in-app · <span style="font-family:var(--mono);color:var(--signal);">Z.George</span> · 04 Aug 2026 · reasons and evidence attached to each line.</p>
+
+            <h3>Gross margin — both ways</h3>
+            <p style="color:var(--muted);font-size:13px;margin-top:-6px;">Buying-group rebate is posted below gross profit. Reclassified into cost of sales, true product margin is 2.5 points higher than the headline figure.</p>
+            <div class="bridge-row">
+              <span>As reported (rebate excluded)</span>
+              <div class="barwrap"><div class="bar base" style="width:18.2%"></div></div>
+              <span class="amt">18.2%</span>
+            </div>
+            <div class="bridge-row">
+              <span>Including rebate in cost of sales</span>
+              <div class="barwrap"><div class="bar add" style="width:20.7%"></div></div>
+              <span class="amt pos" style="color:var(--signal);">20.7%</span>
+            </div>
+            <p style="color:var(--muted);font-size:12.5px;">FY2023 rebate income: <strong style="color:var(--ink);">£352k</strong> — equivalent to <strong style="color:var(--ink);">40%</strong> of adjusted EBITDA.</p>
+
+            <h3>Rebate — change of control sensitivity</h3>
+            <p style="color:var(--muted);font-size:13px;margin-top:-6px;">Buying-group terms are negotiated per member and are not guaranteed to transfer on acquisition. Three scenarios, not a point estimate — a missing agreement is scored as risk, not assumed safe.</p>
+            <div class="scenario-row">
+              <span class="tag low">Low</span>
+              <div class="scenario-bar-track"><div class="scenario-mid"></div></div>
+              <span class="impact" style="color:var(--signal);">£0</span>
+            </div>
+            <div class="scenario-row">
+              <span class="tag medium">Mid</span>
+              <div class="scenario-bar-track"><div class="scenario-mid"></div><div class="scenario-bar" style="right:38%;background:var(--amber);"></div></div>
+              <span class="impact" style="color:var(--amber);">–£141k</span>
+            </div>
+            <div class="scenario-row">
+              <span class="tag high">High</span>
+              <div class="scenario-bar-track"><div class="scenario-mid"></div><div class="scenario-bar" style="right:16%;background:var(--red);"></div></div>
+              <span class="impact" style="color:var(--red);">–£299k</span>
+            </div>
+            <p class="notice">High case reflects 2 of 3 supplier rebate agreements marked not provided — see coverage, §06.</p>
+
+            <h3>Supplier concentration</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Supplier</th><th>% of purchases</th></tr></thead>
+                <tbody>
+                  <tr><td>Supplier A — timber &amp; sheet materials</td><td>26%</td></tr>
+                  <tr><td>Supplier B — heavy building materials</td><td>19%</td></tr>
+                  <tr><td>Supplier C — plumbing &amp; drainage</td><td>13%</td></tr>
+                  <tr><td>Remaining 41 suppliers</td><td>42%</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p style="color:var(--muted);font-size:12.5px;">Top 3 suppliers = <strong style="color:var(--ink);">58%</strong> of purchases. Supplier A alone supplies roughly 40% of buying-group rebate income.</p>
+
+            <h3>Branch like-for-like trading</h3>
+            <div class="sparkrow">
+              <span class="name">Thornbury (HQ)</span>
+              <svg width="140" height="34" viewBox="0 0 140 34"><polyline points="0,10 35,7 70,4 105,3 140,2" fill="none" stroke="var(--signal)" stroke-width="2"/><circle cx="140" cy="2" r="3" fill="var(--signal)"/></svg>
+              <span class="figs">+6.1% <span class="gm">GM 19.8%</span></span>
+            </div>
+            <div class="sparkrow">
+              <span class="name">Yate</span>
+              <svg width="140" height="34" viewBox="0 0 140 34"><polyline points="0,14 35,12 70,10 105,9 140,7" fill="none" stroke="var(--signal)" stroke-width="2"/><circle cx="140" cy="7" r="3" fill="var(--signal)"/></svg>
+              <span class="figs">+3.4% <span class="gm">GM 18.6%</span></span>
+            </div>
+            <div class="sparkrow">
+              <span class="name">Chippenham</span>
+              <svg width="140" height="34" viewBox="0 0 140 34"><polyline points="0,12 35,14 70,17 105,19 140,22" fill="none" stroke="var(--amber)" stroke-width="2"/><circle cx="140" cy="22" r="3" fill="var(--amber)"/></svg>
+              <span class="figs">–0.6% <span class="gm">GM 17.9%</span></span>
+            </div>
+            <div class="sparkrow">
+              <span class="name">Trowbridge</span>
+              <svg width="140" height="34" viewBox="0 0 140 34"><polyline points="0,10 35,15 70,19 105,23 140,27" fill="none" stroke="var(--red)" stroke-width="2"/><circle cx="140" cy="27" r="3" fill="var(--red)"/></svg>
+              <span class="figs">–4.7% <span class="gm">GM 15.2%</span> <span class="tag high">2yr decline</span></span>
+            </div>
+          </section>
+
+          <section id="sku" class="section">
+            <h2>Product &amp; SKU margin</h2>
+            <p class="section-lead">Sourced from BisTrack sales line detail — unavailable in the first cut of this dashboard, now that the trading system is connected. Expand a category for its top SKUs.</p>
+            <details class="category-block" open>
+              <summary class="category-summary"><span class="catname">Timber &amp; Sheet Materials</span><span class="num">£4.10m</span><span class="num">17.4%</span><span class="chev">›</span></summary>
+              <div class="sku-sub"><div class="table-wrap"><table>
+                <thead><tr><th>SKU</th><th>Revenue</th><th>GM%</th></tr></thead>
+                <tbody>
+                  <tr><td>47×100 C16 Regularised Timber</td><td>£212k</td><td>19.8%</td></tr>
+                  <tr><td>18mm WBP Structural Plywood 2440×1220</td><td>£186k</td><td>15.1%</td></tr>
+                  <tr><td>12.5mm Standard Plasterboard</td><td>£164k</td><td>21.3%</td></tr>
+                </tbody>
+              </table></div></div>
+            </details>
+            <details class="category-block">
+              <summary class="category-summary"><span class="catname">Aggregates &amp; Heavy Building Materials</span><span class="num">£3.35m</span><span class="num">14.9%</span><span class="chev">›</span></summary>
+              <div class="sku-sub">
+                <p class="cat-flag">Lowest-margin category and most exposed to commodity price movement — see forecast sensitivity, §07.</p>
+                <div class="table-wrap"><table>
+                  <thead><tr><th>SKU</th><th>Revenue</th><th>GM%</th></tr></thead>
+                  <tbody>
+                    <tr><td>20mm MOT Type 1 (bulk bag)</td><td>£141k</td><td>11.2%</td></tr>
+                    <tr><td>Ready-mix Concrete C25 (per m³, call-off)</td><td>£98k</td><td>16.4%</td></tr>
+                    <tr><td>Facing Brick — Red Multi</td><td>£87k</td><td>18.9%</td></tr>
+                  </tbody>
+                </table></div>
+              </div>
+            </details>
+            <details class="category-block">
+              <summary class="category-summary"><span class="catname">Plumbing &amp; Drainage</span><span class="num">£2.80m</span><span class="num">19.9%</span><span class="chev">›</span></summary>
+              <div class="sku-sub"><div class="table-wrap"><table>
+                <thead><tr><th>SKU</th><th>Revenue</th><th>GM%</th></tr></thead>
+                <tbody><tr><td>110mm Underground Drainage Pipe (3m)</td><td>£64k</td><td>17.2%</td></tr></tbody>
+              </table></div></div>
+            </details>
+            <details class="category-block">
+              <summary class="category-summary"><span class="catname">Landscaping</span><span class="num">£2.05m</span><span class="num">22.6%</span><span class="chev">›</span></summary>
+              <div class="sku-sub"><div class="table-wrap"><table>
+                <thead><tr><th>SKU</th><th>Revenue</th><th>GM%</th></tr></thead>
+                <tbody>
+                  <tr><td>Indian Sandstone Paving 900×600 (per m²)</td><td>£96k</td><td>26.1%</td></tr>
+                  <tr><td>Kiln-dried Sand (bulk bag)</td><td>£41k</td><td>19.0%</td></tr>
+                </tbody>
+              </table></div></div>
+            </details>
+            <details class="category-block">
+              <summary class="category-summary"><span class="catname">Fixings &amp; Ironmongery</span><span class="num">£1.90m</span><span class="num">28.4%</span><span class="chev">›</span></summary>
+              <div class="sku-sub"><div class="table-wrap"><table>
+                <thead><tr><th>SKU</th><th>Revenue</th><th>GM%</th></tr></thead>
+                <tbody><tr><td>Timber Screws 5×100 (box of 200)</td><td>£22k</td><td>33.5%</td></tr></tbody>
+              </table></div></div>
+            </details>
+          </section>
+
+          <section id="risk" class="section">
+            <h2>Where the risk is</h2>
+            <p class="section-lead">Credit and stock risk are both concentrated, and one manual journal shows a director-level entry to cost of sales in the last week of the financial year, reversed three days into the new one.</p>
+
+            <h3>Aged debt — 90+ days, by quarter</h3>
+            <div class="trend-chart">
+              <svg viewBox="0 0 220 90" preserveAspectRatio="none">
+                <line x1="0" y1="70" x2="220" y2="70" stroke="var(--line)" stroke-width="1"/>
+                <rect x="10" y="61" width="34" height="9" fill="rgba(240,180,41,.25)"/>
+                <rect x="64" y="52" width="34" height="18" fill="rgba(240,180,41,.25)"/>
+                <rect x="118" y="38" width="34" height="32" fill="var(--amber)"/>
+                <rect x="172" y="15" width="34" height="55" fill="var(--red)"/>
+                <text x="27" y="82" font-size="9" fill="var(--muted)" text-anchor="middle" font-family="var(--mono)">Q1</text>
+                <text x="81" y="82" font-size="9" fill="var(--muted)" text-anchor="middle" font-family="var(--mono)">Q2</text>
+                <text x="135" y="82" font-size="9" fill="var(--muted)" text-anchor="middle" font-family="var(--mono)">Q3</text>
+                <text x="189" y="82" font-size="9" fill="var(--muted)" text-anchor="middle" font-family="var(--mono)">Q4</text>
+              </svg>
+            </div>
+            <p style="color:var(--muted);font-size:12.5px;">4.1% → 5.8% → 7.9% → <strong style="color:var(--red);">11.4%</strong> of debtor book. Latest 90+ balance <strong style="color:var(--ink);">£212k</strong>.</p>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Of the £212k 90+ balance</th><th>Amount</th></tr></thead>
+                <tbody>
+                  <tr><td>Contractual retentions — not yet due</td><td>£68k</td></tr>
+                  <tr><td>Genuine arrears beyond agreed terms</td><td style="color:var(--red);">£144k</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p style="color:var(--muted);font-size:11.5px;">Retentions on completed contracts (typically released at practical completion / defects-liability expiry) are not deterioration — separated out rather than pooled with slow-paying accounts.</p>
+
+            <h3>Stock ageing</h3>
+            <div class="range">£361k</div>
+            <p style="color:var(--muted);font-size:12.5px;margin:6px 0;">No movement &gt;12 months — 15.4% of a £2.34m stock book. Provision held: <strong style="color:var(--ink);">£40k</strong>.</p>
+            <p style="color:var(--red);font-size:12px;font-weight:700;">~£321k under-provisioned against known ageing.</p>
+            <p class="notice">Separately: £186k of the £2.34m book is supplier consignment stock (sale-or-return terms, principally timber &amp; plasterboard) — not yet owned by Thornbury under the supplier agreement, but included in the reported stock value pending title-transfer confirmation.</p>
+
+            <h3>Customer revenue concentration — testing the 80/20 assumption</h3>
+            <p style="color:var(--muted);font-size:13px;margin-top:-6px;max-width:70ch;">The rule of thumb is that 20 accounts should carry roughly 80% of revenue. Ranked and plotted against ~340 active accounts, this book does not follow it — worth showing, since the honest answer to "is it concentrated" is not always yes.</p>
+            <div class="trend-chart">
+              <svg viewBox="0 0 460 168" preserveAspectRatio="none">
+                <line x1="0" y1="140" x2="460" y2="140" stroke="var(--line-strong)" stroke-width="1"/>
+                <line x1="0" y1="36" x2="460" y2="36" stroke="var(--amber)" stroke-width="1" stroke-dasharray="4,4"/>
+                <text x="4" y="32" font-size="9" fill="var(--amber)" font-family="var(--mono)">80% reference</text>
+                <rect x="10" y="20.8" width="16" height="119.2" fill="var(--violet)"/>
+                <rect x="32" y="77.2" width="16" height="62.8" fill="var(--violet)"/>
+                <rect x="54" y="86.9" width="16" height="53.1" fill="var(--violet)"/>
+                <rect x="76" y="95.6" width="16" height="44.4" fill="var(--violet)"/>
+                <rect x="98" y="105.3" width="16" height="34.7" fill="var(--violet)"/>
+                <rect x="120" y="109.7" width="16" height="30.3" fill="var(--violet)"/>
+                <rect x="142" y="112.9" width="16" height="27.1" fill="var(--violet)"/>
+                <rect x="164" y="115.1" width="16" height="24.9" fill="var(--violet)"/>
+                <rect x="186" y="117.25" width="16" height="22.75" fill="var(--violet)"/>
+                <rect x="208" y="119.4" width="16" height="20.6" fill="var(--violet)"/>
+                <rect x="230" y="121.6" width="16" height="18.4" fill="var(--violet)"/>
+                <rect x="252" y="122.7" width="16" height="17.3" fill="var(--violet)"/>
+                <rect x="274" y="123.75" width="16" height="16.25" fill="var(--violet)"/>
+                <rect x="296" y="124.8" width="16" height="15.2" fill="var(--violet)"/>
+                <rect x="318" y="125.9" width="16" height="14.1" fill="var(--violet)"/>
+                <rect x="340" y="127.0" width="16" height="13.0" fill="var(--violet)"/>
+                <rect x="362" y="128.1" width="16" height="11.9" fill="var(--violet)"/>
+                <rect x="384" y="129.2" width="16" height="10.8" fill="var(--violet)"/>
+                <rect x="406" y="130.25" width="16" height="9.75" fill="var(--violet)"/>
+                <rect x="428" y="131.3" width="16" height="8.7" fill="var(--violet)"/>
+                <polyline points="18,125.7 40,118.2 62,111.8 84,106.5 106,102.3 128,98.7 150,95.4 172,92.4 194,89.7 216,87.2 238,85.0 260,82.9 282,81.0 304,79.2 326,77.5 348,75.9 370,74.5 392,73.2 414,72.0 436,71.0" fill="none" stroke="var(--ink)" stroke-width="2"/>
+                <circle cx="106" cy="102.3" r="3.5" fill="var(--ink)"/>
+                <text x="106" y="152" font-size="9" fill="var(--muted)" text-anchor="middle" font-family="var(--mono)">rank 5 · 29%</text>
+                <circle cx="436" cy="71.0" r="3.5" fill="var(--ink)"/>
+                <text x="436" y="152" font-size="9" fill="var(--ink)" text-anchor="middle" font-family="var(--mono)" font-weight="700">rank 20 · 53%</text>
+                <text x="4" y="12" font-size="9" fill="var(--muted)" font-family="var(--mono)">Cumulative %</text>
+              </svg>
+              <div class="trend-legend">
+                <span class="trend-legend-item"><i style="background:var(--violet);"></i>Individual account share</span>
+                <span class="trend-legend-item"><i style="background:var(--ink);"></i>Cumulative share</span>
+                <span class="trend-legend-item"><i style="background:var(--amber);"></i>80% reference</span>
+              </div>
+            </div>
+            <p style="color:var(--muted);font-size:12px;">Top 20 accounts (of ~340 active) hold <strong style="color:var(--ink);">53%</strong> of revenue, not 80% — this book is genuinely diversified on the customer side. The concentration risk sits on the <em>supplier</em> side instead: 58% of purchases with just 3 suppliers (§02).</p>
+            <p style="color:var(--muted);font-size:12px;"><strong style="color:var(--ink);">Fenwick Construction</strong> (rank 1, 11% of revenue) holds <strong style="color:var(--ink);">40%</strong> of the reported 90+ overdue balance — but <strong style="color:var(--ink);">£51k</strong> of that £85k is a contractual retention not yet due, leaving <strong style="color:var(--ink);">£34k</strong> in genuine arrears beyond terms.</p>
+
+            <h3>Unusual journal — flagged</h3>
+            <article class="risk risk-register-item severity-critical">
+              <span class="risk-severity"><span class="signal-bars signal-bars-severity severity-critical" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><b>critical</b></span>
+              <div>
+                <h3>Manual journal to Cost of Sales, £94,500 credit — posted 2 days before year end</h3>
+                <p><strong>Evidence:</strong> Posted 29 Dec 2023 by user D.HARGREAVES (director-level); reversed 3 Jan 2024. Narrative: "Year end adjustment" — no supporting schedule attached. Net FY2023 P&amp;L effect: +£94.5k gross profit for 3 trading days.</p>
+                <p><strong>Buyer impact:</strong> Pattern matches the detection rule for period-end manual entries to margin lines — round-ish figure, director-level user, reversed within days of the new period opening.</p>
+                <p><strong>Next action:</strong> Quarantined from valuation inputs pending explanation. See combined conclusion, §01.</p>
+              </div>
+            </article>
+          </section>
+
+          <section id="reconciliation" class="section">
+            <h2>Reconciliation</h2>
+            <p class="section-lead">Automated, deterministic ties between the trading system, the financial ledger and the filed statutory accounts — only reconciled periods drive the stance above.</p>
+            <div class="table-wrap">
+              <table class="reconciliation-table">
+                <thead><tr><th>Tie</th><th class="evidence-cell">Detail</th><th class="status-cell">Status</th></tr></thead>
+                <tbody>
+                  <tr><td>Revenue — BisTrack → Sage 200</td><td class="evidence-cell">Tie within 0.2% across all four branches</td><td class="status-cell" style="color:var(--signal);">PASS</td></tr>
+                  <tr><td>Cost of sales — Sage 200 → BisTrack</td><td class="evidence-cell">1.6-point gap — stock revaluation timing difference between systems</td><td class="status-cell" style="color:var(--amber);">EXPLAINED</td></tr>
+                  <tr><td>Stock valuation — BisTrack → Sage 200</td><td class="evidence-cell">Tie within 0.4%</td><td class="status-cell" style="color:var(--signal);">PASS</td></tr>
+                  <tr><td>Statutory ↔ management</td><td class="evidence-cell">Revenue, GP, operating profit and net assets all within tolerance for FY2023</td><td class="status-cell" style="color:var(--signal);">PASS</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section id="coverage" class="section">
+            <h2>What we can and can't tell you yet</h2>
+            <p class="section-lead">Every finding above states what it depends on. Nothing here is inferred to fill a gap — a missing export is reported as missing, not smoothed over.</p>
+            <div class="list-card">
+              <h3>Evidence coverage</h3>
+              <ul>
+                <li><span class="tag medium">Partial</span> <strong>Buying-group rebate agreements</strong><small>1 of 3 supplier agreements provided. The other two are treated as high-risk in the change-of-control sensitivity (§02) by default — a missing agreement is not evidence the terms are safe.</small></li>
+                <li><span class="tag medium">Partial</span> <strong>Trowbridge branch overhead allocation</strong><small>~20% of overheads allocated by estimate rather than actual posting. Trowbridge branch EBITDA (§02) is directionally reliable, not precise to the pound.</small></li>
+                <li><span class="tag low">Now available</span> <strong>Product-line / SKU-level margin</strong><small>BisTrack sales line detail connected — see §03. Discount-discipline analysis (list price vs price achieved) still depends on confirming BisTrack retains matrix pricing alongside price achieved — not yet confirmed with the target.</small></li>
+                <li><span class="tag medium">Partial</span> <strong>BisTrack transaction history depth</strong><small>Only 18 months of SKU-level history migrated from the target's prior trading system. The §07 forecast is blended with category-level seasonality for this reason — treat the forecast band as indicative until more periods are loaded.</small></li>
+                <li><span class="tag medium">Unconfirmed</span> <strong>Sales-line cost basis</strong><small>Not yet confirmed whether BisTrack stores cost as-at-date-of-sale or recalculates at current cost. If recalculated, the multi-year margin trend in §02 should be read as indicative only.</small></li>
+              </ul>
+            </div>
+          </section>
+
+          <section id="forecast" class="section">
+            <h2>Forecast <span class="badge-preview">Capability preview</span></h2>
+            <p class="section-lead">Not evidence-gated the way §01–§06 are — a forecast is a modelled judgement, not a verified fact, and is labelled as such throughout. Shown to demonstrate the capability; blended from the target's own trailing revenue, BMBI category seasonality and pipeline where available.</p>
+
+            <h3>13-week cash flow forecast</h3>
+            <div class="trend-chart">
+              <svg viewBox="0 0 460 150" preserveAspectRatio="none">
+                <line x1="0" y1="30" x2="460" y2="30" stroke="var(--line)" stroke-width="1"/>
+                <line x1="0" y1="75" x2="460" y2="75" stroke="var(--line)" stroke-width="1"/>
+                <line x1="0" y1="120" x2="460" y2="120" stroke="var(--line)" stroke-width="1"/>
+                <polygon points="140,55 180,50 220,40 260,58 300,35 340,30 380,45 420,25 460,20 460,95 420,80 380,95 340,75 300,90 260,105 220,85 180,95 140,90" fill="var(--violet)" opacity="0.18"/>
+                <polyline points="0,70 47,60 94,72 140,62" fill="none" stroke="var(--ink)" stroke-width="2"/>
+                <polyline points="140,62 180,72 220,62 260,80 300,62 340,52 380,68 420,52 460,57" fill="none" stroke="var(--violet)" stroke-width="2" stroke-dasharray="5,4"/>
+                <circle cx="260" cy="80" r="4" fill="var(--amber)"/>
+                <text x="260" y="70" font-size="9" fill="var(--amber)" text-anchor="middle" font-family="var(--mono)">VAT qtr</text>
+                <circle cx="140" cy="62" r="3" fill="var(--ink)"/>
+                <text x="4" y="12" font-size="9" fill="var(--muted)" font-family="var(--mono)">Actual → Forecast</text>
+                <text x="4" y="145" font-size="9" fill="var(--muted)" font-family="var(--mono)">Week 1</text>
+                <text x="440" y="145" font-size="9" fill="var(--muted)" font-family="var(--mono)">Week 17</text>
+              </svg>
+              <div class="trend-legend">
+                <span class="trend-legend-item"><i style="background:var(--ink);"></i>Actual — last 4 weeks</span>
+                <span class="trend-legend-item"><i style="background:var(--violet);"></i>Forecast — central case</span>
+                <span class="trend-legend-item"><i style="background:var(--amber);"></i>Known low point</span>
+              </div>
+            </div>
+
+            <h3>Revenue forecast by branch — next 2 quarters</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Branch</th><th>Low</th><th>Central</th><th>High</th></tr></thead>
+                <tbody>
+                  <tr><td>Thornbury (HQ)</td><td>£3.05m</td><td>£3.24m</td><td>£3.41m</td></tr>
+                  <tr><td>Yate</td><td>£1.68m</td><td>£1.78m</td><td>£1.87m</td></tr>
+                  <tr><td>Chippenham</td><td>£1.31m</td><td>£1.38m</td><td>£1.44m</td></tr>
+                  <tr><td>Trowbridge</td><td>£0.94m</td><td>£1.01m</td><td>£1.07m</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p style="color:var(--muted);font-size:12px;">Trowbridge central case still assumes the 2-year like-for-like decline (§02) continues rather than reverses.</p>
+
+            <h3>Working capital forecast</h3>
+            <p style="color:var(--muted);font-size:13px;margin-top:-6px;">Projected from current debtor/creditor day trends (§04) rather than assumed constant — the 90+ debtor deterioration carries forward into the cash forecast above instead of being modelled away.</p>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th></th><th>Current</th><th>+3mo (central)</th><th>+6mo (central)</th></tr></thead>
+                <tbody>
+                  <tr><td>Debtor days</td><td>41</td><td>44</td><td>46</td></tr>
+                  <tr><td>Creditor days</td><td>38</td><td>37</td><td>37</td></tr>
+                  <tr><td>Stock days</td><td>62</td><td>60</td><td>58</td></tr>
+                  <tr><td>Cash conversion cycle</td><td>65</td><td>67</td><td>67</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+        </article>
+      </div>
+    </section>
+  </main>
+</div>

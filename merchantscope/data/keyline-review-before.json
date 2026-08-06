@@ -1,0 +1,2501 @@
+{
+  "companyNumber": "SC042425",
+  "name": "KEYLINE CIVILS SPECIALIST LIMITED",
+  "periods": [
+    {
+      "periodEnd": "2025-12-31",
+      "scope": "company",
+      "source": "pdf_reconciled",
+      "reviewed": false,
+      "reviewedAt": null,
+      "validation": {
+        "source": "pdf_reconciled",
+        "pnl": "pass",
+        "balanceSheet": "incomplete",
+        "checks": [
+          {
+            "key": "2025-12-31|current|company",
+            "check": "pnl:gross_profit_bridge",
+            "status": "pass",
+            "observations": [
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:0",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:2",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:4"
+            ]
+          },
+          {
+            "key": "2025-12-31|current|company",
+            "check": "pnl:operating_profit_bridge",
+            "status": "pass",
+            "observations": [
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:4",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:8",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:12"
+            ]
+          },
+          {
+            "key": "2025-12-31|current|company",
+            "check": "pnl:profit_before_tax_bridge",
+            "status": "pass",
+            "observations": [
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:12",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:14",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:16"
+            ]
+          },
+          {
+            "key": "2025-12-31|current|company",
+            "check": "pnl:tax_bridge",
+            "status": "pass",
+            "observations": [
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:16",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:18",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:20"
+            ]
+          },
+          {
+            "key": "2025-12-31|current|company",
+            "check": "pnl:public_subtotal_chain",
+            "status": "incomplete",
+            "observations": [
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:0",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:4",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:12",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:16",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:18",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:20",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:20"
+            ]
+          },
+          {
+            "key": "2025-12-31|current|company",
+            "check": "balance_sheet:net_current_assets",
+            "status": "incomplete",
+            "observations": [
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:26",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:28"
+            ]
+          },
+          {
+            "key": "2025-12-31|current|company",
+            "check": "balance_sheet:assets_less_current_liabilities",
+            "status": "incomplete",
+            "observations": [
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:28"
+            ]
+          },
+          {
+            "key": "2025-12-31|current|company",
+            "check": "balance_sheet:net_assets_disclosed_liabilities",
+            "status": "incomplete",
+            "observations": [
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:30"
+            ]
+          },
+          {
+            "key": "2025-12-31|current|company",
+            "check": "balance_sheet:equity_tie",
+            "status": "pass",
+            "observations": [
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:30",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:32"
+            ]
+          },
+          {
+            "key": "2025-12-31|current|company",
+            "check": "balance_sheet:public_net_assets",
+            "status": "incomplete",
+            "observations": [
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:30"
+            ]
+          }
+        ],
+        "reconciled": false,
+        "accountingEligible": true,
+        "valuationEligible": false,
+        "confidence": {
+          "score": 47,
+          "band": "low",
+          "reasons": [
+            "balance_sheet: incomplete",
+            "6 unresolved candidates",
+            "fixed_assets_total mentioned, no candidate on page 19",
+            "current_assets_total mentioned, no candidate on page 19",
+            "total_assets mentioned, no candidate on page 19",
+            "provisions mentioned, no candidate on page 19",
+            "assets_less_current_liabilities mentioned, no candidate on page 19"
+          ]
+        }
+      },
+      "confidence": {
+        "score": 47,
+        "band": "low",
+        "reasons": [
+          "balance_sheet: incomplete",
+          "6 unresolved candidates",
+          "fixed_assets_total mentioned, no candidate on page 19",
+          "current_assets_total mentioned, no candidate on page 19",
+          "total_assets mentioned, no candidate on page 19",
+          "provisions mentioned, no candidate on page 19",
+          "assets_less_current_liabilities mentioned, no candidate on page 19"
+        ]
+      },
+      "fields": [
+        {
+          "field": "turnover",
+          "label": "Turnover",
+          "value": 482300000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:0",
+            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+            "page": 18,
+            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:0",
+              "value": 482300000,
+              "status": "pass",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 18,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "482.3"
+            }
+          ]
+        },
+        {
+          "field": "costOfSales",
+          "label": "Cost of sales",
+          "value": -414600000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:2",
+            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+            "page": 18,
+            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:2",
+              "value": -414600000,
+              "status": "pass",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 18,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "(414.6)"
+            }
+          ]
+        },
+        {
+          "field": "grossProfit",
+          "label": "Gross profit",
+          "value": 67700000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:4",
+            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+            "page": 18,
+            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:4",
+              "value": 67700000,
+              "status": "pass",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 18,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "67.7"
+            }
+          ]
+        },
+        {
+          "field": "distributionCosts",
+          "label": "Distribution costs",
+          "value": -41800000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:6",
+            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+            "page": 18,
+            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:6",
+              "value": -41800000,
+              "status": "pass",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 18,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "(41.8)"
+            }
+          ]
+        },
+        {
+          "field": "administrativeExpenses",
+          "label": "Administrative expenses",
+          "value": -13700000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:8",
+            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+            "page": 18,
+            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:8",
+              "value": -13700000,
+              "status": "pass",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 18,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "(13.7)"
+            }
+          ]
+        },
+        {
+          "field": "adjustingItems",
+          "label": "Adjusting items",
+          "value": -2300000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:10",
+            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+            "page": 18,
+            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:10",
+              "value": -2300000,
+              "status": "pass",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 18,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "(2.3)"
+            }
+          ]
+        },
+        {
+          "field": "operatingProfit",
+          "label": "Operating result",
+          "value": 9900000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:12",
+            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+            "page": 18,
+            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:12",
+              "value": 9900000,
+              "status": "pass",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 18,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "9.9"
+            }
+          ]
+        },
+        {
+          "field": "netInterest",
+          "label": "Net interest",
+          "value": -1000000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:14",
+            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+            "page": 18,
+            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:14",
+              "value": -1000000,
+              "status": "pass",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 18,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "(1.0)"
+            }
+          ]
+        },
+        {
+          "field": "profitBeforeTax",
+          "label": "Result before taxation",
+          "value": 8900000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:16",
+            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+            "page": 18,
+            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:16",
+              "value": 8900000,
+              "status": "pass",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 18,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "8.9"
+            }
+          ]
+        },
+        {
+          "field": "taxExpense",
+          "label": "Tax on result",
+          "value": -3000000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:18",
+            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+            "page": 18,
+            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:18",
+              "value": -3000000,
+              "status": "pass",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 18,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "(3.0)"
+            }
+          ]
+        },
+        {
+          "field": "profitAfterTax",
+          "label": "Statutory profit/loss for the year",
+          "value": 5900000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:20",
+            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+            "page": 18,
+            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:20",
+              "value": 5900000,
+              "status": "pass",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 18,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "5.9"
+            }
+          ]
+        },
+        {
+          "field": "debtors",
+          "label": "Debtors",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:22",
+              "value": 170900000,
+              "status": "incomplete",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 19,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "170.9"
+            }
+          ]
+        },
+        {
+          "field": "cash",
+          "label": "Cash",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:24",
+              "value": 900000,
+              "status": "incomplete",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 19,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "0.9"
+            }
+          ]
+        },
+        {
+          "field": "currentLiabilities",
+          "label": "Current liabilities",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:26",
+              "value": 183900000,
+              "status": "incomplete",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 19,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "(183.9)"
+            }
+          ]
+        },
+        {
+          "field": "netCurrentAssets",
+          "label": "Net current assets",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:28",
+              "value": 18500000,
+              "status": "incomplete",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 19,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "18.5"
+            }
+          ]
+        },
+        {
+          "field": "netAssets",
+          "label": "Net assets",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:30",
+              "value": 27100000,
+              "status": "incomplete",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 19,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "27.1"
+            }
+          ]
+        },
+        {
+          "field": "equityTotal",
+          "label": "Equity",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:32",
+              "value": 27100000,
+              "status": "incomplete",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 19,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "27.1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "periodEnd": "2024-12-31",
+      "scope": "company",
+      "source": "pdf_reconciled",
+      "reviewed": false,
+      "reviewedAt": null,
+      "validation": {
+        "source": "pdf_reconciled",
+        "pnl": "pass",
+        "balanceSheet": "incomplete",
+        "checks": [
+          {
+            "key": "2024-12-31|comparative|company",
+            "check": "pnl:gross_profit_bridge",
+            "status": "pass",
+            "observations": [
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:1",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:3",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:5"
+            ]
+          },
+          {
+            "key": "2024-12-31|comparative|company",
+            "check": "pnl:operating_profit_bridge",
+            "status": "pass",
+            "observations": [
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:5",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:9",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:13"
+            ]
+          },
+          {
+            "key": "2024-12-31|comparative|company",
+            "check": "pnl:profit_before_tax_bridge",
+            "status": "pass",
+            "observations": [
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:13",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:17"
+            ],
+            "basis": "finance_row_blank_for_this_period"
+          },
+          {
+            "key": "2024-12-31|comparative|company",
+            "check": "pnl:tax_bridge",
+            "status": "pass",
+            "observations": [
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:17",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:19",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:21"
+            ]
+          },
+          {
+            "key": "2024-12-31|comparative|company",
+            "check": "pnl:public_subtotal_chain",
+            "status": "incomplete",
+            "observations": [
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:1",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:5",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:13",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:17",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:19",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:21",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:21"
+            ]
+          },
+          {
+            "key": "2024-12-31|comparative|company",
+            "check": "balance_sheet:net_current_assets",
+            "status": "incomplete",
+            "observations": [
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:27",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:29"
+            ]
+          },
+          {
+            "key": "2024-12-31|comparative|company",
+            "check": "balance_sheet:assets_less_current_liabilities",
+            "status": "incomplete",
+            "observations": [
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:29"
+            ]
+          },
+          {
+            "key": "2024-12-31|comparative|company",
+            "check": "balance_sheet:net_assets_disclosed_liabilities",
+            "status": "incomplete",
+            "observations": [
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:31"
+            ]
+          },
+          {
+            "key": "2024-12-31|comparative|company",
+            "check": "balance_sheet:equity_tie",
+            "status": "pass",
+            "observations": [
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:31",
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:33"
+            ]
+          },
+          {
+            "key": "2024-12-31|comparative|company",
+            "check": "balance_sheet:public_net_assets",
+            "status": "incomplete",
+            "observations": [
+              "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:31"
+            ]
+          }
+        ],
+        "reconciled": false,
+        "accountingEligible": true,
+        "valuationEligible": false,
+        "confidence": {
+          "score": 47,
+          "band": "low",
+          "reasons": [
+            "balance_sheet: incomplete",
+            "12 unresolved candidates",
+            "fixed_assets_total mentioned, no candidate on page 19",
+            "current_assets_total mentioned, no candidate on page 19",
+            "total_assets mentioned, no candidate on page 19",
+            "provisions mentioned, no candidate on page 19",
+            "assets_less_current_liabilities mentioned, no candidate on page 19",
+            "total_assets mentioned, no candidate on page 17",
+            "provisions mentioned, no candidate on page 17",
+            "assets_less_current_liabilities mentioned, no candidate on page 17"
+          ]
+        }
+      },
+      "confidence": {
+        "score": 47,
+        "band": "low",
+        "reasons": [
+          "balance_sheet: incomplete",
+          "12 unresolved candidates",
+          "fixed_assets_total mentioned, no candidate on page 19",
+          "current_assets_total mentioned, no candidate on page 19",
+          "total_assets mentioned, no candidate on page 19",
+          "provisions mentioned, no candidate on page 19",
+          "assets_less_current_liabilities mentioned, no candidate on page 19",
+          "total_assets mentioned, no candidate on page 17",
+          "provisions mentioned, no candidate on page 17",
+          "assets_less_current_liabilities mentioned, no candidate on page 17"
+        ]
+      },
+      "fields": [
+        {
+          "field": "turnover",
+          "label": "Turnover",
+          "value": 489000000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:1",
+            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+            "page": 18,
+            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:1",
+              "value": 489000000,
+              "status": "pass",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 18,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "489.0"
+            },
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:0",
+              "value": 489000000,
+              "status": "pass",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 16,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "489.0"
+            }
+          ]
+        },
+        {
+          "field": "costOfSales",
+          "label": "Cost of sales",
+          "value": -421400000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:3",
+            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+            "page": 18,
+            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:3",
+              "value": -421400000,
+              "status": "pass",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 18,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "(421.4)"
+            },
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:2",
+              "value": -421400000,
+              "status": "pass",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 16,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "(421.4)"
+            }
+          ]
+        },
+        {
+          "field": "grossProfit",
+          "label": "Gross profit",
+          "value": 67600000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:5",
+            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+            "page": 18,
+            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:5",
+              "value": 67600000,
+              "status": "pass",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 18,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "67.6"
+            },
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:4",
+              "value": 67600000,
+              "status": "pass",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 16,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "67.6"
+            }
+          ]
+        },
+        {
+          "field": "distributionCosts",
+          "label": "Distribution costs",
+          "value": -40800000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:7",
+            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+            "page": 18,
+            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:7",
+              "value": -40800000,
+              "status": "pass",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 18,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "(40.8)"
+            },
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:6",
+              "value": -40800000,
+              "status": "pass",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 16,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "(40.8)"
+            }
+          ]
+        },
+        {
+          "field": "administrativeExpenses",
+          "label": "Administrative expenses",
+          "value": -12400000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:9",
+            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+            "page": 18,
+            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:9",
+              "value": -12400000,
+              "status": "pass",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 18,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "(12.4)"
+            },
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:8",
+              "value": -12400000,
+              "status": "pass",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 16,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "(12.4)"
+            }
+          ]
+        },
+        {
+          "field": "adjustingItems",
+          "label": "Adjusting items",
+          "value": -3800000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:11",
+            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+            "page": 18,
+            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:11",
+              "value": -3800000,
+              "status": "pass",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 18,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "(3.8)"
+            },
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:10",
+              "value": -3800000,
+              "status": "pass",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 16,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "(3.8)"
+            }
+          ]
+        },
+        {
+          "field": "operatingProfit",
+          "label": "Operating result",
+          "value": 10600000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:13",
+            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+            "page": 18,
+            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:13",
+              "value": 10600000,
+              "status": "pass",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 18,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "10.6"
+            },
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:12",
+              "value": 10600000,
+              "status": "pass",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 16,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "10.6"
+            }
+          ]
+        },
+        {
+          "field": "netInterest",
+          "label": "Net interest",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:15",
+              "value": null,
+              "status": "fail",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 18,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "-"
+            }
+          ]
+        },
+        {
+          "field": "profitBeforeTax",
+          "label": "Result before taxation",
+          "value": 10600000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:17",
+            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+            "page": 18,
+            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:17",
+              "value": 10600000,
+              "status": "pass",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 18,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "10.6"
+            },
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:14",
+              "value": 10600000,
+              "status": "pass",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 16,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "10.6"
+            }
+          ]
+        },
+        {
+          "field": "taxExpense",
+          "label": "Tax on result",
+          "value": -3600000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:19",
+            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+            "page": 18,
+            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:19",
+              "value": -3600000,
+              "status": "pass",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 18,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "(3.6)"
+            },
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:16",
+              "value": -3600000,
+              "status": "pass",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 16,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "(3.6)"
+            }
+          ]
+        },
+        {
+          "field": "profitAfterTax",
+          "label": "Statutory profit/loss for the year",
+          "value": 7000000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:21",
+            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+            "page": 18,
+            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:21",
+              "value": 7000000,
+              "status": "pass",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 18,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "7.0"
+            },
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:18",
+              "value": 7000000,
+              "status": "pass",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 16,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "7.0"
+            }
+          ]
+        },
+        {
+          "field": "fixedAssets",
+          "label": "Fixed assets",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:32",
+              "value": 15400000,
+              "status": "fail",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 17,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "Fixed assets:\nTangible fixed assets\nIntangible assets\n15.4\n22.7"
+            }
+          ]
+        },
+        {
+          "field": "debtors",
+          "label": "Debtors",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:23",
+              "value": 211700000,
+              "status": "incomplete",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 19,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "211.7"
+            },
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:20",
+              "value": 211700000,
+              "status": "incomplete",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 17,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "211.7"
+            }
+          ]
+        },
+        {
+          "field": "cash",
+          "label": "Cash",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:25",
+              "value": 4099999.9999999995,
+              "status": "incomplete",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 19,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "4.1"
+            },
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:22",
+              "value": 4099999.9999999995,
+              "status": "incomplete",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 17,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "4.1"
+            }
+          ]
+        },
+        {
+          "field": "currentAssets",
+          "label": "Current assets",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:33",
+              "value": 211700000,
+              "status": "fail",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 17,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "Current assets:\nStocks\nDebtors\nCash at bank and in hand"
+            }
+          ]
+        },
+        {
+          "field": "currentLiabilities",
+          "label": "Current liabilities",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:27",
+              "value": 112100000,
+              "status": "incomplete",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 19,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "(112.1)"
+            },
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:24",
+              "value": 112100000,
+              "status": "incomplete",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 17,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "(112.1)"
+            }
+          ]
+        },
+        {
+          "field": "netCurrentAssets",
+          "label": "Net current assets",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:29",
+              "value": 131699999.99999999,
+              "status": "incomplete",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 19,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "131.7"
+            },
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:26",
+              "value": 131699999.99999999,
+              "status": "incomplete",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 17,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "131.7"
+            }
+          ]
+        },
+        {
+          "field": "netAssets",
+          "label": "Net assets",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:31",
+              "value": 142800000,
+              "status": "incomplete",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 19,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "142.8"
+            },
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:28",
+              "value": 142800000,
+              "status": "incomplete",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 17,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "142.8"
+            },
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:alternate:0",
+              "value": 301700000,
+              "status": "fail",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 17,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "Net assets\nTotal equity"
+            }
+          ]
+        },
+        {
+          "field": "equityTotal",
+          "label": "Equity",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:33",
+              "value": 142800000,
+              "status": "incomplete",
+              "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
+              "page": 19,
+              "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
+              "evidenceText": "142.8"
+            },
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:30",
+              "value": 142800000,
+              "status": "incomplete",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 17,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "142.8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "periodEnd": "2023-12-31",
+      "scope": "company",
+      "source": "pdf_reconciled",
+      "reviewed": false,
+      "reviewedAt": null,
+      "validation": {
+        "source": "pdf_reconciled",
+        "pnl": "pass",
+        "balanceSheet": "incomplete",
+        "checks": [
+          {
+            "key": "2023-12-31|comparative|company",
+            "check": "pnl:gross_profit_bridge",
+            "status": "pass",
+            "observations": [
+              "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:1",
+              "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:3",
+              "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:5"
+            ]
+          },
+          {
+            "key": "2023-12-31|comparative|company",
+            "check": "pnl:operating_profit_bridge",
+            "status": "pass",
+            "observations": [
+              "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:5",
+              "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:9",
+              "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:13"
+            ]
+          },
+          {
+            "key": "2023-12-31|comparative|company",
+            "check": "pnl:profit_before_tax_bridge",
+            "status": "pass",
+            "observations": [
+              "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:13",
+              "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:15"
+            ]
+          },
+          {
+            "key": "2023-12-31|comparative|company",
+            "check": "pnl:tax_bridge",
+            "status": "pass",
+            "observations": [
+              "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:15",
+              "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:17",
+              "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:19"
+            ]
+          },
+          {
+            "key": "2023-12-31|comparative|company",
+            "check": "pnl:public_subtotal_chain",
+            "status": "incomplete",
+            "observations": [
+              "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:1",
+              "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:5",
+              "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:13",
+              "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:15",
+              "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:17",
+              "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:19",
+              "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:19"
+            ]
+          },
+          {
+            "key": "2023-12-31|comparative|company",
+            "check": "balance_sheet:net_current_assets",
+            "status": "incomplete",
+            "observations": [
+              "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:25",
+              "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:27"
+            ]
+          },
+          {
+            "key": "2023-12-31|comparative|company",
+            "check": "balance_sheet:assets_less_current_liabilities",
+            "status": "incomplete",
+            "observations": [
+              "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:27"
+            ]
+          },
+          {
+            "key": "2023-12-31|comparative|company",
+            "check": "balance_sheet:net_assets_disclosed_liabilities",
+            "status": "incomplete",
+            "observations": [
+              "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:29"
+            ]
+          },
+          {
+            "key": "2023-12-31|comparative|company",
+            "check": "balance_sheet:equity_tie",
+            "status": "pass",
+            "observations": [
+              "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:29",
+              "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:31"
+            ]
+          },
+          {
+            "key": "2023-12-31|comparative|company",
+            "check": "balance_sheet:public_net_assets",
+            "status": "incomplete",
+            "observations": [
+              "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:29"
+            ]
+          }
+        ],
+        "reconciled": false,
+        "accountingEligible": true,
+        "valuationEligible": false,
+        "confidence": {
+          "score": 47,
+          "band": "low",
+          "reasons": [
+            "balance_sheet: incomplete",
+            "10 unresolved candidates",
+            "total_assets mentioned, no candidate on page 17",
+            "provisions mentioned, no candidate on page 17",
+            "assets_less_current_liabilities mentioned, no candidate on page 17",
+            "total_assets mentioned, no candidate on page 17",
+            "provisions mentioned, no candidate on page 17",
+            "assets_less_current_liabilities mentioned, no candidate on page 17"
+          ]
+        }
+      },
+      "confidence": {
+        "score": 47,
+        "band": "low",
+        "reasons": [
+          "balance_sheet: incomplete",
+          "10 unresolved candidates",
+          "total_assets mentioned, no candidate on page 17",
+          "provisions mentioned, no candidate on page 17",
+          "assets_less_current_liabilities mentioned, no candidate on page 17",
+          "total_assets mentioned, no candidate on page 17",
+          "provisions mentioned, no candidate on page 17",
+          "assets_less_current_liabilities mentioned, no candidate on page 17"
+        ]
+      },
+      "fields": [
+        {
+          "field": "turnover",
+          "label": "Turnover",
+          "value": 503700000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:1",
+            "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+            "page": 16,
+            "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:1",
+              "value": 503700000,
+              "status": "pass",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 16,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "503.7"
+            },
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:0",
+              "value": 503700000,
+              "status": "pass",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 16,
+              "evidenceUrl": null,
+              "evidenceText": "503.7",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "costOfSales",
+          "label": "Cost of sales",
+          "value": -424700000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:3",
+            "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+            "page": 16,
+            "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:3",
+              "value": -424700000,
+              "status": "pass",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 16,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "(424.7)"
+            },
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:2",
+              "value": -424700000,
+              "status": "pass",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 16,
+              "evidenceUrl": null,
+              "evidenceText": "(424.7)",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "grossProfit",
+          "label": "Gross profit",
+          "value": 79000000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:5",
+            "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+            "page": 16,
+            "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:5",
+              "value": 79000000,
+              "status": "pass",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 16,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "79.0"
+            },
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:4",
+              "value": 79000000,
+              "status": "pass",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 16,
+              "evidenceUrl": null,
+              "evidenceText": "79.0",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "distributionCosts",
+          "label": "Distribution costs",
+          "value": -40500000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:7",
+            "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+            "page": 16,
+            "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:7",
+              "value": -40500000,
+              "status": "pass",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 16,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "(40.5)"
+            },
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:6",
+              "value": -40500000,
+              "status": "pass",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 16,
+              "evidenceUrl": null,
+              "evidenceText": "(40.5)",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "administrativeExpenses",
+          "label": "Administrative expenses",
+          "value": -17000000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:9",
+            "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+            "page": 16,
+            "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:9",
+              "value": -17000000,
+              "status": "pass",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 16,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "(17.0)"
+            },
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:8",
+              "value": -17000000,
+              "status": "pass",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 16,
+              "evidenceUrl": null,
+              "evidenceText": "(17.0)",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "adjustingItems",
+          "label": "Adjusting items",
+          "value": -1600000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:11",
+            "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+            "page": 16,
+            "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:11",
+              "value": -1600000,
+              "status": "pass",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 16,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "(1.6)"
+            },
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:10",
+              "value": -1600000,
+              "status": "pass",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 16,
+              "evidenceUrl": null,
+              "evidenceText": "(1.6)",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "operatingProfit",
+          "label": "Operating result",
+          "value": 19900000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:13",
+            "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+            "page": 16,
+            "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:13",
+              "value": 19900000,
+              "status": "pass",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 16,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "19.9"
+            },
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:12",
+              "value": 19900000,
+              "status": "pass",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 16,
+              "evidenceUrl": null,
+              "evidenceText": "19.9",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "profitBeforeTax",
+          "label": "Result before taxation",
+          "value": 19900000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:15",
+            "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+            "page": 16,
+            "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:15",
+              "value": 19900000,
+              "status": "pass",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 16,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "19.9"
+            },
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:14",
+              "value": 19900000,
+              "status": "pass",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 16,
+              "evidenceUrl": null,
+              "evidenceText": "19.9",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "taxExpense",
+          "label": "Tax on result",
+          "value": -5300000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:17",
+            "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+            "page": 16,
+            "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:17",
+              "value": -5300000,
+              "status": "pass",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 16,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "(5.3)"
+            },
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:16",
+              "value": -5300000,
+              "status": "pass",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 16,
+              "evidenceUrl": null,
+              "evidenceText": "(5.3)",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "profitAfterTax",
+          "label": "Statutory profit/loss for the year",
+          "value": 14600000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:19",
+            "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+            "page": 16,
+            "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+            "valuationEligible": false
+          },
+          "alternates": [
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:19",
+              "value": 14600000,
+              "status": "pass",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 16,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "14.6"
+            },
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:18",
+              "value": 14600000,
+              "status": "pass",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 16,
+              "evidenceUrl": null,
+              "evidenceText": "14.6",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "fixedAssets",
+          "label": "Fixed assets",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:34",
+              "value": 20.6,
+              "status": "fail",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 17,
+              "evidenceUrl": null,
+              "evidenceText": "Tangible fixed assets\nIntangible assets\n22.7\n22.2",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "debtors",
+          "label": "Debtors",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:21",
+              "value": 386300000,
+              "status": "incomplete",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 17,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "386.3"
+            },
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:20",
+              "value": 386300000,
+              "status": "incomplete",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 17,
+              "evidenceUrl": null,
+              "evidenceText": "386.3",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "cash",
+          "label": "Cash",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:23",
+              "value": null,
+              "status": "fail",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 17,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "-"
+            },
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:22",
+              "value": null,
+              "status": "fail",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 17,
+              "evidenceUrl": null,
+              "evidenceText": "-",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "currentAssets",
+          "label": "Current assets",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:35",
+              "value": 415.5,
+              "status": "fail",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 17,
+              "evidenceUrl": null,
+              "evidenceText": "Stocks\nDebtors\nCash at bank and in hand\n415.5\n416.0",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "currentLiabilities",
+          "label": "Current liabilities",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:25",
+              "value": 131400000,
+              "status": "incomplete",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 17,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "(131.4)"
+            },
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:24",
+              "value": 131400000,
+              "status": "incomplete",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 17,
+              "evidenceUrl": null,
+              "evidenceText": "(131.4)",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "netCurrentAssets",
+          "label": "Net current assets",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:27",
+              "value": 284100000,
+              "status": "incomplete",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 17,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "284.1"
+            },
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:26",
+              "value": 284100000,
+              "status": "incomplete",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 17,
+              "evidenceUrl": null,
+              "evidenceText": "284.1",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "longTermLiabilities",
+          "label": "Long-term liabilities",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:28",
+              "value": null,
+              "status": "fail",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 17,
+              "evidenceUrl": null,
+              "evidenceText": "-",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "netAssets",
+          "label": "Net assets",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:29",
+              "value": 301700000,
+              "status": "incomplete",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 17,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "301.7"
+            },
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:30",
+              "value": 301700000,
+              "status": "incomplete",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 17,
+              "evidenceUrl": null,
+              "evidenceText": "301.7",
+              "demoUnavailable": true
+            },
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:alternate:0",
+              "value": 301.7,
+              "status": "fail",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 17,
+              "evidenceUrl": null,
+              "evidenceText": "Net assets\n301.7\n286.4",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "equityTotal",
+          "label": "Equity",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:31",
+              "value": 301700000,
+              "status": "incomplete",
+              "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
+              "page": 17,
+              "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
+              "evidenceText": "301.7"
+            },
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:32",
+              "value": 301700000,
+              "status": "incomplete",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 17,
+              "evidenceUrl": null,
+              "evidenceText": "301.7",
+              "demoUnavailable": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "periodEnd": "2022-12-31",
+      "scope": "company",
+      "source": "pdf_reconciled",
+      "reviewed": false,
+      "reviewedAt": null,
+      "validation": {
+        "source": "pdf_reconciled",
+        "pnl": "pass",
+        "balanceSheet": "incomplete",
+        "checks": [
+          {
+            "key": "2022-12-31|comparative|company",
+            "check": "pnl:gross_profit_bridge",
+            "status": "pass",
+            "observations": [
+              "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:1",
+              "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:3",
+              "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:5"
+            ]
+          },
+          {
+            "key": "2022-12-31|comparative|company",
+            "check": "pnl:operating_profit_bridge",
+            "status": "pass",
+            "observations": [
+              "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:5",
+              "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:9",
+              "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:13"
+            ]
+          },
+          {
+            "key": "2022-12-31|comparative|company",
+            "check": "pnl:profit_before_tax_bridge",
+            "status": "pass",
+            "observations": [
+              "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:13",
+              "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:15"
+            ]
+          },
+          {
+            "key": "2022-12-31|comparative|company",
+            "check": "pnl:tax_bridge",
+            "status": "pass",
+            "observations": [
+              "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:15",
+              "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:17",
+              "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:19"
+            ]
+          },
+          {
+            "key": "2022-12-31|comparative|company",
+            "check": "pnl:public_subtotal_chain",
+            "status": "incomplete",
+            "observations": [
+              "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:1",
+              "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:5",
+              "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:13",
+              "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:15",
+              "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:17",
+              "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:19",
+              "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:19"
+            ]
+          },
+          {
+            "key": "2022-12-31|comparative|company",
+            "check": "balance_sheet:net_current_assets",
+            "status": "incomplete",
+            "observations": [
+              "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:25",
+              "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:27"
+            ]
+          },
+          {
+            "key": "2022-12-31|comparative|company",
+            "check": "balance_sheet:assets_less_current_liabilities",
+            "status": "incomplete",
+            "observations": [
+              "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:27"
+            ]
+          },
+          {
+            "key": "2022-12-31|comparative|company",
+            "check": "balance_sheet:net_assets_disclosed_liabilities",
+            "status": "incomplete",
+            "observations": [
+              "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:29",
+              "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:31"
+            ]
+          },
+          {
+            "key": "2022-12-31|comparative|company",
+            "check": "balance_sheet:equity_tie",
+            "status": "pass",
+            "observations": [
+              "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:31",
+              "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:33"
+            ]
+          },
+          {
+            "key": "2022-12-31|comparative|company",
+            "check": "balance_sheet:public_net_assets",
+            "status": "incomplete",
+            "observations": [
+              "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:31"
+            ]
+          }
+        ],
+        "reconciled": false,
+        "accountingEligible": true,
+        "valuationEligible": false,
+        "confidence": {
+          "score": 46,
+          "band": "low",
+          "reasons": [
+            "balance_sheet: incomplete",
+            "7 unresolved candidates",
+            "total_assets mentioned, no candidate on page 17",
+            "provisions mentioned, no candidate on page 17",
+            "assets_less_current_liabilities mentioned, no candidate on page 17"
+          ]
+        }
+      },
+      "confidence": {
+        "score": 46,
+        "band": "low",
+        "reasons": [
+          "balance_sheet: incomplete",
+          "7 unresolved candidates",
+          "total_assets mentioned, no candidate on page 17",
+          "provisions mentioned, no candidate on page 17",
+          "assets_less_current_liabilities mentioned, no candidate on page 17"
+        ]
+      },
+      "fields": [
+        {
+          "field": "turnover",
+          "label": "Turnover",
+          "value": 566000000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:1",
+            "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+            "page": 16,
+            "evidenceUrl": null,
+            "valuationEligible": false,
+            "demoUnavailable": true
+          },
+          "alternates": [
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:1",
+              "value": 566000000,
+              "status": "pass",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 16,
+              "evidenceUrl": null,
+              "evidenceText": "566.0",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "costOfSales",
+          "label": "Cost of sales",
+          "value": -465000000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:3",
+            "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+            "page": 16,
+            "evidenceUrl": null,
+            "valuationEligible": false,
+            "demoUnavailable": true
+          },
+          "alternates": [
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:3",
+              "value": -465000000,
+              "status": "pass",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 16,
+              "evidenceUrl": null,
+              "evidenceText": "(465.0)",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "grossProfit",
+          "label": "Gross profit",
+          "value": 101000000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:5",
+            "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+            "page": 16,
+            "evidenceUrl": null,
+            "valuationEligible": false,
+            "demoUnavailable": true
+          },
+          "alternates": [
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:5",
+              "value": 101000000,
+              "status": "pass",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 16,
+              "evidenceUrl": null,
+              "evidenceText": "101.0",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "distributionCosts",
+          "label": "Distribution costs",
+          "value": -39600000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:7",
+            "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+            "page": 16,
+            "evidenceUrl": null,
+            "valuationEligible": false,
+            "demoUnavailable": true
+          },
+          "alternates": [
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:7",
+              "value": -39600000,
+              "status": "pass",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 16,
+              "evidenceUrl": null,
+              "evidenceText": "(39.6)",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "administrativeExpenses",
+          "label": "Administrative expenses",
+          "value": -18400000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:9",
+            "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+            "page": 16,
+            "evidenceUrl": null,
+            "valuationEligible": false,
+            "demoUnavailable": true
+          },
+          "alternates": [
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:9",
+              "value": -18400000,
+              "status": "pass",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 16,
+              "evidenceUrl": null,
+              "evidenceText": "(18.4)",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "adjustingItems",
+          "label": "Adjusting items",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:11",
+              "value": null,
+              "status": "fail",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 16,
+              "evidenceUrl": null,
+              "evidenceText": "-",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "operatingProfit",
+          "label": "Operating result",
+          "value": 43000000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:13",
+            "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+            "page": 16,
+            "evidenceUrl": null,
+            "valuationEligible": false,
+            "demoUnavailable": true
+          },
+          "alternates": [
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:13",
+              "value": 43000000,
+              "status": "pass",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 16,
+              "evidenceUrl": null,
+              "evidenceText": "43.0",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "profitBeforeTax",
+          "label": "Result before taxation",
+          "value": 43000000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:15",
+            "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+            "page": 16,
+            "evidenceUrl": null,
+            "valuationEligible": false,
+            "demoUnavailable": true
+          },
+          "alternates": [
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:15",
+              "value": 43000000,
+              "status": "pass",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 16,
+              "evidenceUrl": null,
+              "evidenceText": "43.0",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "taxExpense",
+          "label": "Tax on result",
+          "value": -8100000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:17",
+            "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+            "page": 16,
+            "evidenceUrl": null,
+            "valuationEligible": false,
+            "demoUnavailable": true
+          },
+          "alternates": [
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:17",
+              "value": -8100000,
+              "status": "pass",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 16,
+              "evidenceUrl": null,
+              "evidenceText": "(8.1)",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "profitAfterTax",
+          "label": "Statutory profit/loss for the year",
+          "value": 34900000,
+          "edited": false,
+          "provenance": {
+            "source": "PDF automated reconciliation",
+            "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:19",
+            "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+            "page": 16,
+            "evidenceUrl": null,
+            "valuationEligible": false,
+            "demoUnavailable": true
+          },
+          "alternates": [
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:19",
+              "value": 34900000,
+              "status": "pass",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 16,
+              "evidenceUrl": null,
+              "evidenceText": "34.9",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "debtors",
+          "label": "Debtors",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:21",
+              "value": 378100000,
+              "status": "incomplete",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 17,
+              "evidenceUrl": null,
+              "evidenceText": "378.1",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "cash",
+          "label": "Cash",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:23",
+              "value": 800000,
+              "status": "incomplete",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 17,
+              "evidenceUrl": null,
+              "evidenceText": "0.8",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "currentLiabilities",
+          "label": "Current liabilities",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:25",
+              "value": 142100000,
+              "status": "incomplete",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 17,
+              "evidenceUrl": null,
+              "evidenceText": "(142.1)",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "netCurrentAssets",
+          "label": "Net current assets",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:27",
+              "value": 273900000,
+              "status": "incomplete",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 17,
+              "evidenceUrl": null,
+              "evidenceText": "273.9",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "longTermLiabilities",
+          "label": "Long-term liabilities",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:29",
+              "value": 6000000,
+              "status": "incomplete",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 17,
+              "evidenceUrl": null,
+              "evidenceText": "(6.0)",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "netAssets",
+          "label": "Net assets",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:31",
+              "value": 286400000,
+              "status": "incomplete",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 17,
+              "evidenceUrl": null,
+              "evidenceText": "286.4",
+              "demoUnavailable": true
+            }
+          ]
+        },
+        {
+          "field": "equityTotal",
+          "label": "Equity",
+          "value": null,
+          "edited": false,
+          "provenance": null,
+          "alternates": [
+            {
+              "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:33",
+              "value": 286400000,
+              "status": "incomplete",
+              "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
+              "page": 17,
+              "evidenceUrl": null,
+              "evidenceText": "286.4",
+              "demoUnavailable": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
