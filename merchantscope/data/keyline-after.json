@@ -340,7 +340,7 @@
         },
         "validation": {
           "source": "pdf_reconciled",
-          "pnl": "pass",
+          "pnl": "human_reviewed",
           "balanceSheet": "incomplete",
           "checks": [
             {
@@ -451,7 +451,7 @@
             ]
           },
           "reviewedBy": "human",
-          "reviewedAt": "2026-08-06T09:03:07.975Z"
+          "reviewedAt": "2026-08-06T10:22:18.051Z"
         },
         "turnover": 482300000,
         "costOfSales": -414600000,
@@ -553,7 +553,7 @@
         },
         "validation": {
           "source": "pdf_reconciled",
-          "pnl": "pass",
+          "pnl": "human_reviewed",
           "balanceSheet": "incomplete",
           "checks": [
             {
@@ -664,7 +664,7 @@
             ]
           },
           "reviewedBy": "human",
-          "reviewedAt": "2026-08-06T09:03:08.051Z"
+          "reviewedAt": "2026-08-06T10:22:18.161Z"
         },
         "turnover": 489000000,
         "costOfSales": -421400000,
@@ -765,7 +765,7 @@
         },
         "validation": {
           "source": "pdf_reconciled",
-          "pnl": "pass",
+          "pnl": "human_reviewed",
           "balanceSheet": "incomplete",
           "checks": [
             {
@@ -875,7 +875,7 @@
             ]
           },
           "reviewedBy": "human",
-          "reviewedAt": "2026-08-06T09:03:08.121Z"
+          "reviewedAt": "2026-08-06T10:22:18.234Z"
         },
         "turnover": 503700000,
         "costOfSales": -424700000,
@@ -977,7 +977,7 @@
         },
         "validation": {
           "source": "pdf_reconciled",
-          "pnl": "pass",
+          "pnl": "human_reviewed",
           "balanceSheet": "incomplete",
           "checks": [
             {
@@ -1088,7 +1088,7 @@
             ]
           },
           "reviewedBy": "human",
-          "reviewedAt": "2026-08-06T09:03:08.208Z"
+          "reviewedAt": "2026-08-06T10:22:18.317Z"
         },
         "turnover": 566000000,
         "costOfSales": -465000000,
@@ -1114,7 +1114,7 @@
           "byteLength": 1669361,
           "worker": "pdfplumber",
           "truncated": false,
-          "jobId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU-mshad7fc",
+          "jobId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU-mshd9gm6",
           "adapters": {
             "nativeText": {
               "status": "empty",
@@ -1155,7 +1155,7 @@
           "byteLength": 1351221,
           "worker": "pdfplumber",
           "truncated": false,
-          "jobId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io-mshad7v3",
+          "jobId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io-mshd9h88",
           "adapters": {
             "nativeText": {
               "status": "empty",
@@ -1196,7 +1196,7 @@
           "byteLength": 1357446,
           "worker": "pdfplumber",
           "truncated": false,
-          "jobId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc-mshad83h",
+          "jobId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc-mshd9hzw",
           "adapters": {
             "nativeText": {
               "status": "empty",
@@ -12532,26 +12532,26 @@
       {
         "label": "Live Companies House public API",
         "url": "https://find-and-update.company-information.service.gov.uk/company/SC042425",
-        "retrievedAt": "2026-08-06T09:00:53.699Z"
+        "retrievedAt": "2026-08-06T10:21:58.758Z"
       },
       {
         "label": "Filed accounts (2026-06-17)",
         "url": "https://find-and-update.company-information.service.gov.uk/company/SC042425/filing-history",
-        "retrievedAt": "2026-08-06T09:00:53.699Z"
+        "retrievedAt": "2026-08-06T10:21:58.758Z"
       },
       {
         "label": "Filed accounts (2025-07-15)",
         "url": "https://find-and-update.company-information.service.gov.uk/company/SC042425/filing-history",
-        "retrievedAt": "2026-08-06T09:00:53.699Z"
+        "retrievedAt": "2026-08-06T10:21:58.758Z"
       },
       {
         "label": "Filed accounts (2024-09-09)",
         "url": "https://find-and-update.company-information.service.gov.uk/company/SC042425/filing-history",
-        "retrievedAt": "2026-08-06T09:00:53.699Z"
+        "retrievedAt": "2026-08-06T10:21:58.758Z"
       }
     ],
     "fixture": false,
-    "liveLimitation": "Filed facts passed automated reconciliation checks and may be used by deterministic screening rules. This is an automated indicative screen, not a formal valuation."
+    "liveLimitation": "Structured facts were captured, but no period passed complete automated reconciliation checks, so valuation remains withheld."
   },
   "settings": {
     "label": "Illustrative screening assumptions",
@@ -12662,7 +12662,7 @@
       },
       "validation": {
         "source": "pdf_reconciled",
-        "pnl": "pass",
+        "pnl": "human_reviewed",
         "balanceSheet": "incomplete",
         "checks": [
           {
@@ -12773,7 +12773,7 @@
           ]
         },
         "reviewedBy": "human",
-        "reviewedAt": "2026-08-06T09:03:07.975Z"
+        "reviewedAt": "2026-08-06T10:22:18.051Z"
       },
       "turnover": 482300000,
       "costOfSales": -414600000,
@@ -12877,7 +12877,7 @@
       },
       "validation": {
         "source": "pdf_reconciled",
-        "pnl": "pass",
+        "pnl": "human_reviewed",
         "balanceSheet": "incomplete",
         "checks": [
           {
@@ -12988,7 +12988,7 @@
           ]
         },
         "reviewedBy": "human",
-        "reviewedAt": "2026-08-06T09:03:08.051Z"
+        "reviewedAt": "2026-08-06T10:22:18.161Z"
       },
       "turnover": 489000000,
       "costOfSales": -421400000,
@@ -13091,7 +13091,7 @@
       },
       "validation": {
         "source": "pdf_reconciled",
-        "pnl": "pass",
+        "pnl": "human_reviewed",
         "balanceSheet": "incomplete",
         "checks": [
           {
@@ -13201,7 +13201,7 @@
           ]
         },
         "reviewedBy": "human",
-        "reviewedAt": "2026-08-06T09:03:08.121Z"
+        "reviewedAt": "2026-08-06T10:22:18.234Z"
       },
       "turnover": 503700000,
       "costOfSales": -424700000,
@@ -13305,7 +13305,7 @@
       },
       "validation": {
         "source": "pdf_reconciled",
-        "pnl": "pass",
+        "pnl": "human_reviewed",
         "balanceSheet": "incomplete",
         "checks": [
           {
@@ -13416,7 +13416,7 @@
           ]
         },
         "reviewedBy": "human",
-        "reviewedAt": "2026-08-06T09:03:08.208Z"
+        "reviewedAt": "2026-08-06T10:22:18.317Z"
       },
       "turnover": 566000000,
       "costOfSales": -465000000,
@@ -13468,6 +13468,7 @@
   ],
   "accountAnalysis": {
     "status": "complete",
-    "stage": "complete"
+    "stage": "complete",
+    "jobId": "company-SC042425-mshd9f1w"
   }
 }

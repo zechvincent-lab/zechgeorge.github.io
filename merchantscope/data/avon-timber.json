@@ -187,8 +187,8 @@
         "depreciationCharge": 172361,
         "validation": {
           "source": "xbrl",
-          "pnl": "partial_no_cost_bridge",
-          "balanceSheet": "incomplete",
+          "pnl": "human_reviewed",
+          "balanceSheet": "human_reviewed",
           "reconciled": true,
           "valuationEligible": true,
           "confidence": {
@@ -200,7 +200,7 @@
           },
           "accountingEligible": true,
           "reviewedBy": "human",
-          "reviewedAt": "2026-08-06T09:03:54.670Z"
+          "reviewedAt": "2026-08-06T10:23:15.425Z"
         }
       },
       {
@@ -285,8 +285,8 @@
         "depreciationCharge": 142173,
         "validation": {
           "source": "xbrl",
-          "pnl": "partial_no_cost_bridge",
-          "balanceSheet": "incomplete",
+          "pnl": "human_reviewed",
+          "balanceSheet": "human_reviewed",
           "reconciled": true,
           "valuationEligible": true,
           "confidence": {
@@ -298,7 +298,7 @@
           },
           "accountingEligible": true,
           "reviewedBy": "human",
-          "reviewedAt": "2026-08-06T09:03:54.736Z"
+          "reviewedAt": "2026-08-06T10:23:15.483Z"
         }
       }
     ],
@@ -322,7 +322,7 @@
           "byteLength": 629884,
           "worker": "pdfplumber",
           "truncated": false,
-          "jobId": "dY7_QUJ4mek2YbeqxyIL3I66bqzqQPHY_Ay283X0__Y-mshad7ll",
+          "jobId": "dY7_QUJ4mek2YbeqxyIL3I66bqzqQPHY_Ay283X0__Y-mshdb3do",
           "adapters": {
             "nativeText": {
               "status": "empty",
@@ -363,7 +363,7 @@
           "byteLength": 643954,
           "worker": "pdfplumber",
           "truncated": false,
-          "jobId": "EulmfvMaBKYsHXfYwsKsGOo6rbaow-204_43yrCcY9A-mshad7wo",
+          "jobId": "EulmfvMaBKYsHXfYwsKsGOo6rbaow-204_43yrCcY9A-mshdb3k9",
           "adapters": {
             "nativeText": {
               "status": "empty",
@@ -6334,26 +6334,26 @@
       {
         "label": "Live Companies House public API",
         "url": "https://find-and-update.company-information.service.gov.uk/company/02497863",
-        "retrievedAt": "2026-08-06T09:00:53.457Z"
+        "retrievedAt": "2026-08-06T10:23:13.358Z"
       },
       {
         "label": "Filed accounts (2026-02-22)",
         "url": "https://find-and-update.company-information.service.gov.uk/company/02497863/filing-history",
-        "retrievedAt": "2026-08-06T09:00:53.457Z"
+        "retrievedAt": "2026-08-06T10:23:13.358Z"
       },
       {
         "label": "Filed accounts (2025-02-10)",
         "url": "https://find-and-update.company-information.service.gov.uk/company/02497863/filing-history",
-        "retrievedAt": "2026-08-06T09:00:53.457Z"
+        "retrievedAt": "2026-08-06T10:23:13.358Z"
       },
       {
         "label": "Filed accounts (2024-01-19)",
         "url": "https://find-and-update.company-information.service.gov.uk/company/02497863/filing-history",
-        "retrievedAt": "2026-08-06T09:00:53.457Z"
+        "retrievedAt": "2026-08-06T10:23:13.358Z"
       }
     ],
     "fixture": false,
-    "liveLimitation": "Filed facts passed automated reconciliation checks and may be used by deterministic screening rules. This is an automated indicative screen, not a formal valuation."
+    "liveLimitation": "Structured facts were captured, but no period passed complete automated reconciliation checks, so valuation remains withheld."
   },
   "settings": {
     "label": "Illustrative screening assumptions",
@@ -6450,8 +6450,8 @@
       "depreciationCharge": 172361,
       "validation": {
         "source": "xbrl",
-        "pnl": "partial_no_cost_bridge",
-        "balanceSheet": "incomplete",
+        "pnl": "human_reviewed",
+        "balanceSheet": "human_reviewed",
         "reconciled": true,
         "valuationEligible": true,
         "confidence": {
@@ -6463,7 +6463,7 @@
         },
         "accountingEligible": true,
         "reviewedBy": "human",
-        "reviewedAt": "2026-08-06T09:03:54.670Z"
+        "reviewedAt": "2026-08-06T10:23:15.425Z"
       },
       "currentRatio": null,
       "operatingMargin": 0.060312806081468086
@@ -6550,8 +6550,8 @@
       "depreciationCharge": 142173,
       "validation": {
         "source": "xbrl",
-        "pnl": "partial_no_cost_bridge",
-        "balanceSheet": "incomplete",
+        "pnl": "human_reviewed",
+        "balanceSheet": "human_reviewed",
         "reconciled": true,
         "valuationEligible": true,
         "confidence": {
@@ -6563,7 +6563,7 @@
         },
         "accountingEligible": true,
         "reviewedBy": "human",
-        "reviewedAt": "2026-08-06T09:03:54.736Z"
+        "reviewedAt": "2026-08-06T10:23:15.483Z"
       },
       "currentRatio": null,
       "operatingMargin": 0.1061211203880019
@@ -6615,6 +6615,7 @@
   ],
   "accountAnalysis": {
     "status": "complete",
-    "stage": "complete"
+    "stage": "complete",
+    "jobId": "company-02497863-mshdb2rf"
   }
 }
