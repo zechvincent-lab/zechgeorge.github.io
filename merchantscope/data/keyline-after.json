@@ -250,98 +250,95 @@
         "scope": "company",
         "provenance": {
           "turnover": {
-            "source": "PDF automated reconciliation",
-            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:0",
-            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-            "page": 18,
-            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.873Z",
+            "previousValue": 482300000
           },
           "costOfSales": {
-            "source": "PDF automated reconciliation",
-            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:2",
-            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-            "page": 18,
-            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.873Z",
+            "previousValue": -414600000
           },
           "grossProfit": {
-            "source": "PDF automated reconciliation",
-            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:4",
-            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-            "page": 18,
-            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.873Z",
+            "previousValue": 67700000
           },
           "distributionCosts": {
-            "source": "PDF automated reconciliation",
-            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:6",
-            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-            "page": 18,
-            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.873Z",
+            "previousValue": -41800000
           },
           "administrativeExpenses": {
-            "source": "PDF automated reconciliation",
-            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:8",
-            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-            "page": 18,
-            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.873Z",
+            "previousValue": -13700000
           },
           "adjustingItems": {
-            "source": "PDF automated reconciliation",
-            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:10",
-            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-            "page": 18,
-            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.873Z",
+            "previousValue": -2300000
           },
           "operatingProfit": {
-            "source": "PDF automated reconciliation",
-            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:12",
-            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-            "page": 18,
-            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.873Z",
+            "previousValue": 9900000
           },
           "netInterest": {
-            "source": "PDF automated reconciliation",
-            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:14",
-            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-            "page": 18,
-            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.873Z",
+            "previousValue": -1000000
           },
           "profitBeforeTax": {
-            "source": "PDF automated reconciliation",
-            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:16",
-            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-            "page": 18,
-            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.873Z",
+            "previousValue": 8900000
           },
           "taxExpense": {
-            "source": "PDF automated reconciliation",
-            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:18",
-            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-            "page": 18,
-            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.873Z",
+            "previousValue": -3000000
           },
           "profitAfterTax": {
-            "source": "PDF automated reconciliation",
-            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:20",
-            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-            "page": 18,
-            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.873Z",
+            "previousValue": 5900000
+          },
+          "debtors": {
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.873Z",
+            "previousValue": null
+          },
+          "cash": {
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.873Z",
+            "previousValue": null
+          },
+          "currentLiabilities": {
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.873Z",
+            "previousValue": null
+          },
+          "netCurrentAssets": {
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.873Z",
+            "previousValue": null
+          },
+          "netAssets": {
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.873Z",
+            "previousValue": null
+          },
+          "equityTotal": {
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.873Z",
+            "previousValue": null
           }
         },
         "validation": {
           "source": "pdf_reconciled",
           "pnl": "human_reviewed",
-          "balanceSheet": "incomplete",
+          "balanceSheet": "human_reviewed",
           "checks": [
             {
               "key": "2025-12-31|current|company",
@@ -451,7 +448,7 @@
             ]
           },
           "reviewedBy": "human",
-          "reviewedAt": "2026-08-06T10:22:18.051Z"
+          "reviewedAt": "2026-08-06T10:34:21.873Z"
         },
         "turnover": 482300000,
         "costOfSales": -414600000,
@@ -463,7 +460,13 @@
         "netInterest": -1000000,
         "profitBeforeTax": 8900000,
         "taxExpense": -3000000,
-        "profitAfterTax": 5900000
+        "profitAfterTax": 5900000,
+        "debtors": 170900000,
+        "cash": 900000,
+        "currentLiabilities": 183900000,
+        "netCurrentAssets": 18500000,
+        "netAssets": 27100000,
+        "equityTotal": 27100000
       },
       {
         "periodEnd": "2024-12-31",
@@ -471,90 +474,100 @@
         "scope": "company",
         "provenance": {
           "turnover": {
-            "source": "PDF automated reconciliation",
-            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:1",
-            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-            "page": 18,
-            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.889Z",
+            "previousValue": 489000000
           },
           "costOfSales": {
-            "source": "PDF automated reconciliation",
-            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:3",
-            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-            "page": 18,
-            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.889Z",
+            "previousValue": -421400000
           },
           "grossProfit": {
-            "source": "PDF automated reconciliation",
-            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:5",
-            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-            "page": 18,
-            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.889Z",
+            "previousValue": 67600000
           },
           "distributionCosts": {
-            "source": "PDF automated reconciliation",
-            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:7",
-            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-            "page": 18,
-            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.889Z",
+            "previousValue": -40800000
           },
           "administrativeExpenses": {
-            "source": "PDF automated reconciliation",
-            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:9",
-            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-            "page": 18,
-            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.889Z",
+            "previousValue": -12400000
           },
           "adjustingItems": {
-            "source": "PDF automated reconciliation",
-            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:11",
-            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-            "page": 18,
-            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.889Z",
+            "previousValue": -3800000
           },
           "operatingProfit": {
-            "source": "PDF automated reconciliation",
-            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:13",
-            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-            "page": 18,
-            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.889Z",
+            "previousValue": 10600000
           },
           "profitBeforeTax": {
-            "source": "PDF automated reconciliation",
-            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:17",
-            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-            "page": 18,
-            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.889Z",
+            "previousValue": 10600000
           },
           "taxExpense": {
-            "source": "PDF automated reconciliation",
-            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:19",
-            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-            "page": 18,
-            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.889Z",
+            "previousValue": -3600000
           },
           "profitAfterTax": {
-            "source": "PDF automated reconciliation",
-            "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:21",
-            "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-            "page": 18,
-            "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.889Z",
+            "previousValue": 7000000
+          },
+          "fixedAssets": {
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.889Z",
+            "previousValue": null
+          },
+          "currentAssets": {
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.889Z",
+            "previousValue": null
+          },
+          "debtors": {
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.889Z",
+            "previousValue": null
+          },
+          "cash": {
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.889Z",
+            "previousValue": null
+          },
+          "currentLiabilities": {
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.889Z",
+            "previousValue": null
+          },
+          "netCurrentAssets": {
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.889Z",
+            "previousValue": null
+          },
+          "netAssets": {
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.889Z",
+            "previousValue": null
+          },
+          "equityTotal": {
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.889Z",
+            "previousValue": null
           }
         },
         "validation": {
           "source": "pdf_reconciled",
           "pnl": "human_reviewed",
-          "balanceSheet": "incomplete",
+          "balanceSheet": "human_reviewed",
           "checks": [
             {
               "key": "2024-12-31|comparative|company",
@@ -664,7 +677,7 @@
             ]
           },
           "reviewedBy": "human",
-          "reviewedAt": "2026-08-06T10:22:18.161Z"
+          "reviewedAt": "2026-08-06T10:34:21.889Z"
         },
         "turnover": 489000000,
         "costOfSales": -421400000,
@@ -675,7 +688,15 @@
         "operatingProfit": 10600000,
         "profitBeforeTax": 10600000,
         "taxExpense": -3600000,
-        "profitAfterTax": 7000000
+        "profitAfterTax": 7000000,
+        "fixedAssets": 15400000,
+        "currentAssets": 211700000,
+        "debtors": 211700000,
+        "cash": 4099999.9999999995,
+        "currentLiabilities": 112100000,
+        "netCurrentAssets": 131699999.99999999,
+        "netAssets": 142800000,
+        "equityTotal": 142800000
       },
       {
         "periodEnd": "2023-12-31",
@@ -683,84 +704,54 @@
         "scope": "company",
         "provenance": {
           "turnover": {
-            "source": "PDF automated reconciliation",
-            "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:1",
-            "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
-            "page": 16,
-            "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.899Z",
+            "previousValue": 503700000
           },
           "costOfSales": {
-            "source": "PDF automated reconciliation",
-            "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:3",
-            "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
-            "page": 16,
-            "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.899Z",
+            "previousValue": -424700000
           },
           "grossProfit": {
-            "source": "PDF automated reconciliation",
-            "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:5",
-            "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
-            "page": 16,
-            "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.899Z",
+            "previousValue": 79000000
           },
           "distributionCosts": {
-            "source": "PDF automated reconciliation",
-            "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:7",
-            "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
-            "page": 16,
-            "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.899Z",
+            "previousValue": -40500000
           },
           "administrativeExpenses": {
-            "source": "PDF automated reconciliation",
-            "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:9",
-            "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
-            "page": 16,
-            "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.899Z",
+            "previousValue": -17000000
           },
           "adjustingItems": {
-            "source": "PDF automated reconciliation",
-            "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:11",
-            "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
-            "page": 16,
-            "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.899Z",
+            "previousValue": -1600000
           },
           "operatingProfit": {
-            "source": "PDF automated reconciliation",
-            "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:13",
-            "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
-            "page": 16,
-            "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.899Z",
+            "previousValue": 19900000
           },
           "profitBeforeTax": {
-            "source": "PDF automated reconciliation",
-            "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:15",
-            "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
-            "page": 16,
-            "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.899Z",
+            "previousValue": 19900000
           },
           "taxExpense": {
-            "source": "PDF automated reconciliation",
-            "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:17",
-            "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
-            "page": 16,
-            "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.899Z",
+            "previousValue": -5300000
           },
           "profitAfterTax": {
-            "source": "PDF automated reconciliation",
-            "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:19",
-            "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
-            "page": 16,
-            "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
-            "valuationEligible": false
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.899Z",
+            "previousValue": 14600000
           }
         },
         "validation": {
@@ -875,7 +866,7 @@
             ]
           },
           "reviewedBy": "human",
-          "reviewedAt": "2026-08-06T10:22:18.234Z"
+          "reviewedAt": "2026-08-06T10:34:21.899Z"
         },
         "turnover": 503700000,
         "costOfSales": -424700000,
@@ -894,85 +885,49 @@
         "scope": "company",
         "provenance": {
           "turnover": {
-            "source": "PDF automated reconciliation",
-            "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:1",
-            "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
-            "page": 16,
-            "evidenceUrl": null,
-            "valuationEligible": false,
-            "demoUnavailable": true
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.913Z",
+            "previousValue": 566000000
           },
           "costOfSales": {
-            "source": "PDF automated reconciliation",
-            "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:3",
-            "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
-            "page": 16,
-            "evidenceUrl": null,
-            "valuationEligible": false,
-            "demoUnavailable": true
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.913Z",
+            "previousValue": -465000000
           },
           "grossProfit": {
-            "source": "PDF automated reconciliation",
-            "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:5",
-            "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
-            "page": 16,
-            "evidenceUrl": null,
-            "valuationEligible": false,
-            "demoUnavailable": true
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.913Z",
+            "previousValue": 101000000
           },
           "distributionCosts": {
-            "source": "PDF automated reconciliation",
-            "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:7",
-            "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
-            "page": 16,
-            "evidenceUrl": null,
-            "valuationEligible": false,
-            "demoUnavailable": true
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.913Z",
+            "previousValue": -39600000
           },
           "administrativeExpenses": {
-            "source": "PDF automated reconciliation",
-            "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:9",
-            "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
-            "page": 16,
-            "evidenceUrl": null,
-            "valuationEligible": false,
-            "demoUnavailable": true
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.913Z",
+            "previousValue": -18400000
           },
           "operatingProfit": {
-            "source": "PDF automated reconciliation",
-            "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:13",
-            "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
-            "page": 16,
-            "evidenceUrl": null,
-            "valuationEligible": false,
-            "demoUnavailable": true
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.913Z",
+            "previousValue": 43000000
           },
           "profitBeforeTax": {
-            "source": "PDF automated reconciliation",
-            "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:15",
-            "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
-            "page": 16,
-            "evidenceUrl": null,
-            "valuationEligible": false,
-            "demoUnavailable": true
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.913Z",
+            "previousValue": 43000000
           },
           "taxExpense": {
-            "source": "PDF automated reconciliation",
-            "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:17",
-            "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
-            "page": 16,
-            "evidenceUrl": null,
-            "valuationEligible": false,
-            "demoUnavailable": true
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.913Z",
+            "previousValue": -8100000
           },
           "profitAfterTax": {
-            "source": "PDF automated reconciliation",
-            "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:19",
-            "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
-            "page": 16,
-            "evidenceUrl": null,
-            "valuationEligible": false,
-            "demoUnavailable": true
+            "source": "Human review",
+            "reviewedAt": "2026-08-06T10:34:21.913Z",
+            "previousValue": 34900000
           }
         },
         "validation": {
@@ -1088,7 +1043,7 @@
             ]
           },
           "reviewedBy": "human",
-          "reviewedAt": "2026-08-06T10:22:18.317Z"
+          "reviewedAt": "2026-08-06T10:34:21.913Z"
         },
         "turnover": 566000000,
         "costOfSales": -465000000,
@@ -1114,7 +1069,7 @@
           "byteLength": 1669361,
           "worker": "pdfplumber",
           "truncated": false,
-          "jobId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU-mshd9gm6",
+          "jobId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU-mshdpec1",
           "adapters": {
             "nativeText": {
               "status": "empty",
@@ -1155,7 +1110,7 @@
           "byteLength": 1351221,
           "worker": "pdfplumber",
           "truncated": false,
-          "jobId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io-mshd9h88",
+          "jobId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io-mshdpeji",
           "adapters": {
             "nativeText": {
               "status": "empty",
@@ -1196,7 +1151,7 @@
           "byteLength": 1357446,
           "worker": "pdfplumber",
           "truncated": false,
-          "jobId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc-mshd9hzw",
+          "jobId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc-mshdpepp",
           "adapters": {
             "nativeText": {
               "status": "empty",
@@ -6985,7 +6940,7 @@
           "canonicalField": "net_assets",
           "metric": "netAssets",
           "reportedLabel": "Net assets",
-          "value": 301700000,
+          "value": 142800000,
           "reportedValue": "301.7",
           "reportedNil": false,
           "currency": "GBP",
@@ -12532,22 +12487,22 @@
       {
         "label": "Live Companies House public API",
         "url": "https://find-and-update.company-information.service.gov.uk/company/SC042425",
-        "retrievedAt": "2026-08-06T10:21:58.758Z"
+        "retrievedAt": "2026-08-06T10:34:21.005Z"
       },
       {
         "label": "Filed accounts (2026-06-17)",
         "url": "https://find-and-update.company-information.service.gov.uk/company/SC042425/filing-history",
-        "retrievedAt": "2026-08-06T10:21:58.758Z"
+        "retrievedAt": "2026-08-06T10:34:21.005Z"
       },
       {
         "label": "Filed accounts (2025-07-15)",
         "url": "https://find-and-update.company-information.service.gov.uk/company/SC042425/filing-history",
-        "retrievedAt": "2026-08-06T10:21:58.758Z"
+        "retrievedAt": "2026-08-06T10:34:21.005Z"
       },
       {
         "label": "Filed accounts (2024-09-09)",
         "url": "https://find-and-update.company-information.service.gov.uk/company/SC042425/filing-history",
-        "retrievedAt": "2026-08-06T10:21:58.758Z"
+        "retrievedAt": "2026-08-06T10:34:21.005Z"
       }
     ],
     "fixture": false,
@@ -12572,98 +12527,95 @@
       "scope": "company",
       "provenance": {
         "turnover": {
-          "source": "PDF automated reconciliation",
-          "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:0",
-          "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-          "page": 18,
-          "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.873Z",
+          "previousValue": 482300000
         },
         "costOfSales": {
-          "source": "PDF automated reconciliation",
-          "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:2",
-          "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-          "page": 18,
-          "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.873Z",
+          "previousValue": -414600000
         },
         "grossProfit": {
-          "source": "PDF automated reconciliation",
-          "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:4",
-          "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-          "page": 18,
-          "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.873Z",
+          "previousValue": 67700000
         },
         "distributionCosts": {
-          "source": "PDF automated reconciliation",
-          "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:6",
-          "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-          "page": 18,
-          "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.873Z",
+          "previousValue": -41800000
         },
         "administrativeExpenses": {
-          "source": "PDF automated reconciliation",
-          "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:8",
-          "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-          "page": 18,
-          "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.873Z",
+          "previousValue": -13700000
         },
         "adjustingItems": {
-          "source": "PDF automated reconciliation",
-          "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:10",
-          "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-          "page": 18,
-          "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.873Z",
+          "previousValue": -2300000
         },
         "operatingProfit": {
-          "source": "PDF automated reconciliation",
-          "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:12",
-          "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-          "page": 18,
-          "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.873Z",
+          "previousValue": 9900000
         },
         "netInterest": {
-          "source": "PDF automated reconciliation",
-          "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:14",
-          "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-          "page": 18,
-          "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.873Z",
+          "previousValue": -1000000
         },
         "profitBeforeTax": {
-          "source": "PDF automated reconciliation",
-          "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:16",
-          "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-          "page": 18,
-          "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.873Z",
+          "previousValue": 8900000
         },
         "taxExpense": {
-          "source": "PDF automated reconciliation",
-          "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:18",
-          "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-          "page": 18,
-          "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.873Z",
+          "previousValue": -3000000
         },
         "profitAfterTax": {
-          "source": "PDF automated reconciliation",
-          "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:20",
-          "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-          "page": 18,
-          "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.873Z",
+          "previousValue": 5900000
+        },
+        "debtors": {
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.873Z",
+          "previousValue": null
+        },
+        "cash": {
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.873Z",
+          "previousValue": null
+        },
+        "currentLiabilities": {
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.873Z",
+          "previousValue": null
+        },
+        "netCurrentAssets": {
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.873Z",
+          "previousValue": null
+        },
+        "netAssets": {
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.873Z",
+          "previousValue": null
+        },
+        "equityTotal": {
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.873Z",
+          "previousValue": null
         }
       },
       "validation": {
         "source": "pdf_reconciled",
         "pnl": "human_reviewed",
-        "balanceSheet": "incomplete",
+        "balanceSheet": "human_reviewed",
         "checks": [
           {
             "key": "2025-12-31|current|company",
@@ -12773,7 +12725,7 @@
           ]
         },
         "reviewedBy": "human",
-        "reviewedAt": "2026-08-06T10:22:18.051Z"
+        "reviewedAt": "2026-08-06T10:34:21.873Z"
       },
       "turnover": 482300000,
       "costOfSales": -414600000,
@@ -12786,6 +12738,12 @@
       "profitBeforeTax": 8900000,
       "taxExpense": -3000000,
       "profitAfterTax": 5900000,
+      "debtors": 170900000,
+      "cash": 900000,
+      "currentLiabilities": 183900000,
+      "netCurrentAssets": 18500000,
+      "netAssets": 27100000,
+      "equityTotal": 27100000,
       "currentRatio": null,
       "operatingMargin": 0.020526643168152604
     },
@@ -12795,90 +12753,100 @@
       "scope": "company",
       "provenance": {
         "turnover": {
-          "source": "PDF automated reconciliation",
-          "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:1",
-          "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-          "page": 18,
-          "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.889Z",
+          "previousValue": 489000000
         },
         "costOfSales": {
-          "source": "PDF automated reconciliation",
-          "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:3",
-          "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-          "page": 18,
-          "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.889Z",
+          "previousValue": -421400000
         },
         "grossProfit": {
-          "source": "PDF automated reconciliation",
-          "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:5",
-          "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-          "page": 18,
-          "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.889Z",
+          "previousValue": 67600000
         },
         "distributionCosts": {
-          "source": "PDF automated reconciliation",
-          "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:7",
-          "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-          "page": 18,
-          "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.889Z",
+          "previousValue": -40800000
         },
         "administrativeExpenses": {
-          "source": "PDF automated reconciliation",
-          "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:9",
-          "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-          "page": 18,
-          "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.889Z",
+          "previousValue": -12400000
         },
         "adjustingItems": {
-          "source": "PDF automated reconciliation",
-          "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:11",
-          "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-          "page": 18,
-          "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.889Z",
+          "previousValue": -3800000
         },
         "operatingProfit": {
-          "source": "PDF automated reconciliation",
-          "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:13",
-          "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-          "page": 18,
-          "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.889Z",
+          "previousValue": 10600000
         },
         "profitBeforeTax": {
-          "source": "PDF automated reconciliation",
-          "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:17",
-          "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-          "page": 18,
-          "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.889Z",
+          "previousValue": 10600000
         },
         "taxExpense": {
-          "source": "PDF automated reconciliation",
-          "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:19",
-          "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-          "page": 18,
-          "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.889Z",
+          "previousValue": -3600000
         },
         "profitAfterTax": {
-          "source": "PDF automated reconciliation",
-          "observationId": "13ec9551f6cf1ee88ccaeb23ea304863ce62dc7e6a6dc560ac401d3b5fdf2e19:primary:21",
-          "documentId": "PxQyZKkuX2L91nLZgqR6DNAgFm3kob5t7khoa8mpSGU",
-          "page": 18,
-          "evidenceUrl": "../evidence/keyline-2025-pl-page18.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.889Z",
+          "previousValue": 7000000
+        },
+        "fixedAssets": {
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.889Z",
+          "previousValue": null
+        },
+        "currentAssets": {
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.889Z",
+          "previousValue": null
+        },
+        "debtors": {
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.889Z",
+          "previousValue": null
+        },
+        "cash": {
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.889Z",
+          "previousValue": null
+        },
+        "currentLiabilities": {
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.889Z",
+          "previousValue": null
+        },
+        "netCurrentAssets": {
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.889Z",
+          "previousValue": null
+        },
+        "netAssets": {
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.889Z",
+          "previousValue": null
+        },
+        "equityTotal": {
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.889Z",
+          "previousValue": null
         }
       },
       "validation": {
         "source": "pdf_reconciled",
         "pnl": "human_reviewed",
-        "balanceSheet": "incomplete",
+        "balanceSheet": "human_reviewed",
         "checks": [
           {
             "key": "2024-12-31|comparative|company",
@@ -12988,7 +12956,7 @@
           ]
         },
         "reviewedBy": "human",
-        "reviewedAt": "2026-08-06T10:22:18.161Z"
+        "reviewedAt": "2026-08-06T10:34:21.889Z"
       },
       "turnover": 489000000,
       "costOfSales": -421400000,
@@ -13000,7 +12968,15 @@
       "profitBeforeTax": 10600000,
       "taxExpense": -3600000,
       "profitAfterTax": 7000000,
-      "currentRatio": null,
+      "fixedAssets": 15400000,
+      "currentAssets": 211700000,
+      "debtors": 211700000,
+      "cash": 4099999.9999999995,
+      "currentLiabilities": 112100000,
+      "netCurrentAssets": 131699999.99999999,
+      "netAssets": 142800000,
+      "equityTotal": 142800000,
+      "currentRatio": 1.888492417484389,
       "operatingMargin": 0.021676891615541923
     },
     {
@@ -13009,84 +12985,54 @@
       "scope": "company",
       "provenance": {
         "turnover": {
-          "source": "PDF automated reconciliation",
-          "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:1",
-          "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
-          "page": 16,
-          "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.899Z",
+          "previousValue": 503700000
         },
         "costOfSales": {
-          "source": "PDF automated reconciliation",
-          "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:3",
-          "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
-          "page": 16,
-          "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.899Z",
+          "previousValue": -424700000
         },
         "grossProfit": {
-          "source": "PDF automated reconciliation",
-          "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:5",
-          "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
-          "page": 16,
-          "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.899Z",
+          "previousValue": 79000000
         },
         "distributionCosts": {
-          "source": "PDF automated reconciliation",
-          "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:7",
-          "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
-          "page": 16,
-          "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.899Z",
+          "previousValue": -40500000
         },
         "administrativeExpenses": {
-          "source": "PDF automated reconciliation",
-          "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:9",
-          "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
-          "page": 16,
-          "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.899Z",
+          "previousValue": -17000000
         },
         "adjustingItems": {
-          "source": "PDF automated reconciliation",
-          "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:11",
-          "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
-          "page": 16,
-          "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.899Z",
+          "previousValue": -1600000
         },
         "operatingProfit": {
-          "source": "PDF automated reconciliation",
-          "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:13",
-          "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
-          "page": 16,
-          "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.899Z",
+          "previousValue": 19900000
         },
         "profitBeforeTax": {
-          "source": "PDF automated reconciliation",
-          "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:15",
-          "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
-          "page": 16,
-          "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.899Z",
+          "previousValue": 19900000
         },
         "taxExpense": {
-          "source": "PDF automated reconciliation",
-          "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:17",
-          "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
-          "page": 16,
-          "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.899Z",
+          "previousValue": -5300000
         },
         "profitAfterTax": {
-          "source": "PDF automated reconciliation",
-          "observationId": "b2e2c59c3fd5d11c7815c2ac88ac2736101807ed89a56f3e37d1cda04e6ef8b2:primary:19",
-          "documentId": "9GR7JUgLc6fko0NNom_krGT-M6bYUnihuCDM_DD76Io",
-          "page": 16,
-          "evidenceUrl": "../evidence/keyline-2024-pl-page16.png",
-          "valuationEligible": false
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.899Z",
+          "previousValue": 14600000
         }
       },
       "validation": {
@@ -13201,7 +13147,7 @@
           ]
         },
         "reviewedBy": "human",
-        "reviewedAt": "2026-08-06T10:22:18.234Z"
+        "reviewedAt": "2026-08-06T10:34:21.899Z"
       },
       "turnover": 503700000,
       "costOfSales": -424700000,
@@ -13222,85 +13168,49 @@
       "scope": "company",
       "provenance": {
         "turnover": {
-          "source": "PDF automated reconciliation",
-          "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:1",
-          "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
-          "page": 16,
-          "evidenceUrl": null,
-          "valuationEligible": false,
-          "demoUnavailable": true
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.913Z",
+          "previousValue": 566000000
         },
         "costOfSales": {
-          "source": "PDF automated reconciliation",
-          "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:3",
-          "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
-          "page": 16,
-          "evidenceUrl": null,
-          "valuationEligible": false,
-          "demoUnavailable": true
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.913Z",
+          "previousValue": -465000000
         },
         "grossProfit": {
-          "source": "PDF automated reconciliation",
-          "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:5",
-          "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
-          "page": 16,
-          "evidenceUrl": null,
-          "valuationEligible": false,
-          "demoUnavailable": true
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.913Z",
+          "previousValue": 101000000
         },
         "distributionCosts": {
-          "source": "PDF automated reconciliation",
-          "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:7",
-          "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
-          "page": 16,
-          "evidenceUrl": null,
-          "valuationEligible": false,
-          "demoUnavailable": true
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.913Z",
+          "previousValue": -39600000
         },
         "administrativeExpenses": {
-          "source": "PDF automated reconciliation",
-          "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:9",
-          "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
-          "page": 16,
-          "evidenceUrl": null,
-          "valuationEligible": false,
-          "demoUnavailable": true
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.913Z",
+          "previousValue": -18400000
         },
         "operatingProfit": {
-          "source": "PDF automated reconciliation",
-          "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:13",
-          "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
-          "page": 16,
-          "evidenceUrl": null,
-          "valuationEligible": false,
-          "demoUnavailable": true
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.913Z",
+          "previousValue": 43000000
         },
         "profitBeforeTax": {
-          "source": "PDF automated reconciliation",
-          "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:15",
-          "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
-          "page": 16,
-          "evidenceUrl": null,
-          "valuationEligible": false,
-          "demoUnavailable": true
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.913Z",
+          "previousValue": 43000000
         },
         "taxExpense": {
-          "source": "PDF automated reconciliation",
-          "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:17",
-          "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
-          "page": 16,
-          "evidenceUrl": null,
-          "valuationEligible": false,
-          "demoUnavailable": true
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.913Z",
+          "previousValue": -8100000
         },
         "profitAfterTax": {
-          "source": "PDF automated reconciliation",
-          "observationId": "6d15345308d58dcc7244c540ce0297b8d110e593e6f3d212abef02e3b528314c:primary:19",
-          "documentId": "Zf33fHdaWk2XMZGLH_qKLrGvDmx0caeUIcoHF7RYHIc",
-          "page": 16,
-          "evidenceUrl": null,
-          "valuationEligible": false,
-          "demoUnavailable": true
+          "source": "Human review",
+          "reviewedAt": "2026-08-06T10:34:21.913Z",
+          "previousValue": 34900000
         }
       },
       "validation": {
@@ -13416,7 +13326,7 @@
           ]
         },
         "reviewedBy": "human",
-        "reviewedAt": "2026-08-06T10:22:18.317Z"
+        "reviewedAt": "2026-08-06T10:34:21.913Z"
       },
       "turnover": 566000000,
       "costOfSales": -465000000,
@@ -13469,6 +13379,6 @@
   "accountAnalysis": {
     "status": "complete",
     "stage": "complete",
-    "jobId": "company-SC042425-mshd9f1w"
+    "jobId": "company-SC042425-mshdpdt0"
   }
 }
