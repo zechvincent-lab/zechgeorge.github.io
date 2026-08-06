@@ -540,6 +540,7 @@ credentialSave.addEventListener("click", (event) => {
 });
 
 $("#add-accounts-nav").addEventListener("click", () => openAddAccounts());
+$("#export-summary-nav").addEventListener("click", () => downloadSummaryPdf());
 
 credentialRemove.addEventListener("click", (event) => {
   event.preventDefault();
