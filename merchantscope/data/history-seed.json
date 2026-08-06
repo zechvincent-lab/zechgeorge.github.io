@@ -1,0 +1,38 @@
+[
+  {
+    "companyNumber": "02497863",
+    "name": "AVON TIMBER MERCHANTS LIMITED",
+    "source": "live",
+    "status": "active",
+    "stance": "Investigate",
+    "sizeFit": "In range",
+    "tier": "A",
+    "evLow": 2439042,
+    "evHigh": 4878084,
+    "screenedAt": "2026-08-06T09:26:24.291Z"
+  },
+  {
+    "companyNumber": "00824821",
+    "name": "TRAVIS PERKINS PLC",
+    "source": "live",
+    "status": "active",
+    "stance": "Stop",
+    "sizeFit": "Out of range",
+    "tier": "B",
+    "evLow": 1141150000,
+    "evHigh": 2510530000,
+    "screenedAt": "2026-08-06T09:26:24.292Z"
+  },
+  {
+    "companyNumber": "10689579",
+    "name": "M.K.M. BUILDING SUPPLIES (LEAMINGTON SPA) LIMITED",
+    "source": "live",
+    "status": "active",
+    "stance": "Investigate",
+    "sizeFit": "Below range",
+    "tier": "A",
+    "evLow": 667608,
+    "evHigh": 1335216,
+    "screenedAt": "2026-08-06T09:26:24.292Z"
+  }
+]
